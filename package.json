@@ -1,0 +1,40 @@
+{
+  "name": "errortoenglish",
+  "version": "0.0.1",
+  "description": "Translate localized IE JavaScript errors to english",
+  "main": "lib/errortoenglish.js",
+  "scripts": {
+    "test": "node bin/runTests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Muscula/errortoenglish.git"
+  },
+  "keywords": [
+    "Javascript",
+    "errors",
+    "error",
+    "messages",
+    "localized",
+    "IE",
+    "Internet",
+    "Explorer",
+    "translate",
+    "english"
+  ],
+  "author": "Allan Ebdrup",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/Muscula/errortoenglish/issues"
+  },
+  "devDependencies": {
+    "mocha": "",
+    "chai": "",
+    "sinon": "",
+    "sinon-chai": "",
+    "jshint": "0.x"
+  },
+  "dependencies": {
+    "async": ""
+  }
+}
