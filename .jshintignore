@@ -1,0 +1,2 @@
+./bin/templates/test-template.js
+test/generatedTests.spec.js

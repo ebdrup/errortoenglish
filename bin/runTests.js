@@ -26,7 +26,9 @@ function runJsHint(pathsArray, callback) {
 		.filter(function (line) {
 			return !!line.trim(); //remove empty lines
 		})
-		.map(path.resolve);
+		.map(function(file){
+            return path.resolve(file);
+        });
 	var results = jsHint.hint(pathsArray, config, reporter, ignores);
 	if (results.length > 0) {
 		return callback(new Error("JSHintErrors"));
