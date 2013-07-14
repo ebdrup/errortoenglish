@@ -12,7 +12,7 @@ usage
 ```js
 errorToEnglish = require("errortoenglish");
 errorToEnglish("オーバーフローしました。", function(err, translation){
-   translation.message === "Overflow";
+   translation === "Overflow";
 }
 ```
 

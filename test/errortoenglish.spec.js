@@ -35,7 +35,7 @@ describe("translating German string", function () {
     });
 
     it("should return the english version", function(){
-        expect(translation).to.have.property("message", "Type mismatch");
+        expect(translation).to.equal("Type mismatch");
     });
 });
 
@@ -52,7 +52,7 @@ describe("translating Japanese string", function () {
     });
 
     it("should return the english version", function(){
-        expect(translation).to.have.property("message", "Overflow");
+        expect(translation).to.equal("Overflow");
     });
 });
 
@@ -69,7 +69,7 @@ describe("translating Danish string with dynamic content on left", function () {
     });
 
     it("should return the english version", function(){
-        expect(translation).to.have.property("message", "%s: an unexpected failure occurred while trying to obtain metadata information");
+        expect(translation).to.equal("KHSKDHKSHDHK: an unexpected failure occurred while trying to obtain metadata information");
     });
 });
 
@@ -86,6 +86,6 @@ describe("translating Finnish string with dynamic content on right", function ()
     });
 
     it("should return the english version", function(){
-        expect(translation).to.have.property("message", "Invalid descriptor for property '%s'");
+        expect(translation).to.equal("Invalid descriptor for property 'kjfksjd'");
     });
 });

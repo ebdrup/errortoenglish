@@ -11,6 +11,6 @@ describe("translating {{languangeCode}} string: {{originalString}}", function ()
     });
 
     it("should return the english version: {{englishString}}", function () {
-        expect(translation).to.have.property("message", "{{englishString}}");
+        expect(translation).to.equal("{{englishString}}");
     });
 });

@@ -1,5 +1,6 @@
 var fs = require("fs");
 var path = require("path");
+var format = require("util").format;
 var targetLanguageFilename = "en-US.txt";
 var testDynamicString = "MyDynamicTestString";
 var testTemplate = fs.readFileSync(
@@ -33,11 +34,13 @@ var tests = files.filter(function (file) {
             }
             tests.push(testTemplate.replace(/\{\{languangeCode\}\}/g, file.languageCode)
                 .replace(/\{\{englishString\}\}/g, targetLines[i])
-                .replace(/\{\{originalString\}\}/g, JSON.stringify(file.lines[i].replace("%s", testDynamicString)).replace(/^"/, "").replace(/"$/, ""))
+                .replace(/\{\{originalString\}\}/g, JSON.stringify(file.lines[i]).replace(/^"/, "").replace(/"$/, ""))
             );
         }
-        return tests.join("");
-    }).join("");
+        return { tests: "var errorToEnglish = require(\"../../lib/errortoenglish\");\n" + tests.join(""), languageCode: file.languageCode};
+    }).forEach(function (testFile){
+		fs.writeFileSync(path.join(__dirname, format("../test/generatedTests/%s.spec.js", testFile.languageCode)), testFile.tests);
+	});
 
 
 function mapFileContentToStrings(file) {
@@ -50,11 +53,8 @@ function mapFileContentToStrings(file) {
                 var code1 = line.substr(0, line.indexOf(","));
                 var code2 = line.substr(line.lastIndexOf(","));
                 var message = code2.length > code1.length ? line.substr(line.indexOf(",") + 1) : line.substr(0, line.lastIndexOf(","));
-                return message.trim();
+                return message.trim().replace("%s", testDynamicString);
             })
     };
 }
 
-tests = "var errorToEnglish = require(\"../lib/errortoenglish\");\n" + tests;
-
-fs.writeFileSync(path.join(__dirname, "../test/generatedTests.spec.js"), tests);

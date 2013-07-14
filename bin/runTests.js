@@ -5,7 +5,7 @@ var path = require("path");
 runJsHint(["lib", "test", "bin"], function (err) {
 	if (err) {
 		console.error("Exiting because of jsHint errors");
-		return process.exit(1);
+		return setTimeout(function(){process.exit(1);}, 1000);
 	}
 	return runMocha();
 });
