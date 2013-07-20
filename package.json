@@ -1,6 +1,6 @@
 {
   "name": "errortoenglish",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Translate localized IE JavaScript errors to english",
   "main": "lib/errortoenglish.js",
   "scripts": {
