@@ -17,7 +17,7 @@ npm install errortoenglish
 usage
 -----
 ```js
-errorToEnglish = require("errortoenglish");
+var errorToEnglish = require("errortoenglish");
 errorToEnglish("オーバーフローしました。", function(err, translation){
    translation === "Overflow";
 }
