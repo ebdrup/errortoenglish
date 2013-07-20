@@ -23,4 +23,4 @@ errorToEnglish("オーバーフローしました。", function(err, translation
 }
 ```
 
-I use this in [Muscula](http://muscula.com), to translate errors logged. (soon)
+I use this in [Muscula](http://muscula.com), to translate errors logged.
