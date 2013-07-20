@@ -10,7 +10,7 @@ describe("translating {{languangeCode}} string: {{originalString}}", function ()
 		});
 	});
 
-	it("should return the english version: {{englishString}}", function () {
-		expect(translation, translation).to.equal("{{englishString}}");
+	it("should return one of the english versions: {{englishTexts}}", function () {
+		expect(translation, translation).to.match(/{{englishRegExp}}/g);
 	});
 });

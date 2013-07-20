@@ -1,6 +1,6 @@
 {
   "name": "errortoenglish",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Translate localized IE JavaScript errors to english",
   "main": "lib/errortoenglish.js",
   "scripts": {
@@ -32,7 +32,8 @@
     "chai": "",
     "sinon": "",
     "sinon-chai": "",
-    "jshint": "0.x"
+    "jshint": "0.x",
+    "quotemeta": ""
   },
   "dependencies": {
     "async": ""

@@ -11,8 +11,8 @@ describe("translating pt-PT string: Chamada ou argumento de procedimento inváli
 		});
 	});
 
-	it("should return the english version: Invalid procedure call or argument", function () {
-		expect(translation, translation).to.equal("Invalid procedure call or argument");
+	it("should return one of the english versions: Invalid procedure call or argument", function () {
+		expect(translation, translation).to.match(/Invalid\ procedure\ call\ or\ argument/g);
 	});
 });
 describe("translating pt-PT string: Excesso de capacidade", function () {
@@ -27,8 +27,8 @@ describe("translating pt-PT string: Excesso de capacidade", function () {
 		});
 	});
 
-	it("should return the english version: Overflow", function () {
-		expect(translation, translation).to.equal("Overflow");
+	it("should return one of the english versions: Overflow", function () {
+		expect(translation, translation).to.match(/Overflow/g);
 	});
 });
 describe("translating pt-PT string: Memória esgotada", function () {
@@ -43,8 +43,8 @@ describe("translating pt-PT string: Memória esgotada", function () {
 		});
 	});
 
-	it("should return the english version: Out of memory", function () {
-		expect(translation, translation).to.equal("Out of memory");
+	it("should return one of the english versions: Out of memory or Out of memory", function () {
+		expect(translation, translation).to.match(/Out\ of\ memory|Out\ of\ memory/g);
 	});
 });
 describe("translating pt-PT string: Formato inferior à linha fora do intervalo", function () {
@@ -59,8 +59,8 @@ describe("translating pt-PT string: Formato inferior à linha fora do intervalo"
 		});
 	});
 
-	it("should return the english version: Subscript out of range", function () {
-		expect(translation, translation).to.equal("Subscript out of range");
+	it("should return one of the english versions: Subscript out of range", function () {
+		expect(translation, translation).to.match(/Subscript\ out\ of\ range/g);
 	});
 });
 describe("translating pt-PT string: Esta matriz é constante ou está temporariamente bloqueada", function () {
@@ -75,8 +75,8 @@ describe("translating pt-PT string: Esta matriz é constante ou está temporaria
 		});
 	});
 
-	it("should return the english version: This array is fixed or temporarily locked", function () {
-		expect(translation, translation).to.equal("This array is fixed or temporarily locked");
+	it("should return one of the english versions: This array is fixed or temporarily locked", function () {
+		expect(translation, translation).to.match(/This\ array\ is\ fixed\ or\ temporarily\ locked/g);
 	});
 });
 describe("translating pt-PT string: Divisão por zero", function () {
@@ -91,8 +91,8 @@ describe("translating pt-PT string: Divisão por zero", function () {
 		});
 	});
 
-	it("should return the english version: Division by zero", function () {
-		expect(translation, translation).to.equal("Division by zero");
+	it("should return one of the english versions: Division by zero", function () {
+		expect(translation, translation).to.match(/Division\ by\ zero/g);
 	});
 });
 describe("translating pt-PT string: Tipo incorreto", function () {
@@ -107,8 +107,8 @@ describe("translating pt-PT string: Tipo incorreto", function () {
 		});
 	});
 
-	it("should return the english version: Type mismatch", function () {
-		expect(translation, translation).to.equal("Type mismatch");
+	it("should return one of the english versions: Type mismatch", function () {
+		expect(translation, translation).to.match(/Type\ mismatch/g);
 	});
 });
 describe("translating pt-PT string: Espaço insuficiente para cadeias", function () {
@@ -123,8 +123,8 @@ describe("translating pt-PT string: Espaço insuficiente para cadeias", function
 		});
 	});
 
-	it("should return the english version: Out of string space", function () {
-		expect(translation, translation).to.equal("Out of string space");
+	it("should return one of the english versions: Out of string space", function () {
+		expect(translation, translation).to.match(/Out\ of\ string\ space/g);
 	});
 });
 describe("translating pt-PT string: Não é possível efetuar operação pedida", function () {
@@ -139,8 +139,8 @@ describe("translating pt-PT string: Não é possível efetuar operação pedida"
 		});
 	});
 
-	it("should return the english version: Can't perform requested operation", function () {
-		expect(translation, translation).to.equal("Can't perform requested operation");
+	it("should return one of the english versions: Can't perform requested operation", function () {
+		expect(translation, translation).to.match(/Can\'t\ perform\ requested\ operation/g);
 	});
 });
 describe("translating pt-PT string: Espaço insuficiente na pilha", function () {
@@ -155,8 +155,8 @@ describe("translating pt-PT string: Espaço insuficiente na pilha", function () 
 		});
 	});
 
-	it("should return the english version: Out of stack space", function () {
-		expect(translation, translation).to.equal("Out of stack space");
+	it("should return one of the english versions: Out of stack space", function () {
+		expect(translation, translation).to.match(/Out\ of\ stack\ space/g);
 	});
 });
 describe("translating pt-PT string: Sub ou Function não definidas", function () {
@@ -171,8 +171,8 @@ describe("translating pt-PT string: Sub ou Function não definidas", function ()
 		});
 	});
 
-	it("should return the english version: Sub or Function not defined", function () {
-		expect(translation, translation).to.equal("Sub or Function not defined");
+	it("should return one of the english versions: Sub or Function not defined", function () {
+		expect(translation, translation).to.match(/Sub\ or\ Function\ not\ defined/g);
 	});
 });
 describe("translating pt-PT string: Erro ao carregar a DLL", function () {
@@ -187,8 +187,8 @@ describe("translating pt-PT string: Erro ao carregar a DLL", function () {
 		});
 	});
 
-	it("should return the english version: Error in loading DLL", function () {
-		expect(translation, translation).to.equal("Error in loading DLL");
+	it("should return one of the english versions: Error in loading DLL", function () {
+		expect(translation, translation).to.match(/Error\ in\ loading\ DLL/g);
 	});
 });
 describe("translating pt-PT string: Erro interno", function () {
@@ -203,8 +203,8 @@ describe("translating pt-PT string: Erro interno", function () {
 		});
 	});
 
-	it("should return the english version: Internal error", function () {
-		expect(translation, translation).to.equal("Internal error");
+	it("should return one of the english versions: Internal error", function () {
+		expect(translation, translation).to.match(/Internal\ error/g);
 	});
 });
 describe("translating pt-PT string: Nome ou número de ficheiro incorreto", function () {
@@ -219,8 +219,8 @@ describe("translating pt-PT string: Nome ou número de ficheiro incorreto", func
 		});
 	});
 
-	it("should return the english version: Bad file name or number", function () {
-		expect(translation, translation).to.equal("Bad file name or number");
+	it("should return one of the english versions: Bad file name or number", function () {
+		expect(translation, translation).to.match(/Bad\ file\ name\ or\ number/g);
 	});
 });
 describe("translating pt-PT string: Ficheiro não encontrado", function () {
@@ -235,8 +235,8 @@ describe("translating pt-PT string: Ficheiro não encontrado", function () {
 		});
 	});
 
-	it("should return the english version: File not found", function () {
-		expect(translation, translation).to.equal("File not found");
+	it("should return one of the english versions: File not found", function () {
+		expect(translation, translation).to.match(/File\ not\ found/g);
 	});
 });
 describe("translating pt-PT string: Modo de ficheiro incorreto", function () {
@@ -251,8 +251,8 @@ describe("translating pt-PT string: Modo de ficheiro incorreto", function () {
 		});
 	});
 
-	it("should return the english version: Bad file mode", function () {
-		expect(translation, translation).to.equal("Bad file mode");
+	it("should return one of the english versions: Bad file mode", function () {
+		expect(translation, translation).to.match(/Bad\ file\ mode/g);
 	});
 });
 describe("translating pt-PT string: Ficheiro já está aberto", function () {
@@ -267,8 +267,8 @@ describe("translating pt-PT string: Ficheiro já está aberto", function () {
 		});
 	});
 
-	it("should return the english version: File already open", function () {
-		expect(translation, translation).to.equal("File already open");
+	it("should return one of the english versions: File already open", function () {
+		expect(translation, translation).to.match(/File\ already\ open/g);
 	});
 });
 describe("translating pt-PT string: Erro de E/S no dispositivo", function () {
@@ -283,8 +283,8 @@ describe("translating pt-PT string: Erro de E/S no dispositivo", function () {
 		});
 	});
 
-	it("should return the english version: Device I/O error", function () {
-		expect(translation, translation).to.equal("Device I/O error");
+	it("should return one of the english versions: Device I/O error", function () {
+		expect(translation, translation).to.match(/Device\ I\/O\ error/g);
 	});
 });
 describe("translating pt-PT string: Ficheiro já existente", function () {
@@ -299,8 +299,8 @@ describe("translating pt-PT string: Ficheiro já existente", function () {
 		});
 	});
 
-	it("should return the english version: File already exists", function () {
-		expect(translation, translation).to.equal("File already exists");
+	it("should return one of the english versions: File already exists", function () {
+		expect(translation, translation).to.match(/File\ already\ exists/g);
 	});
 });
 describe("translating pt-PT string: Disco cheio", function () {
@@ -315,8 +315,8 @@ describe("translating pt-PT string: Disco cheio", function () {
 		});
 	});
 
-	it("should return the english version: Disk full", function () {
-		expect(translation, translation).to.equal("Disk full");
+	it("should return one of the english versions: Disk full", function () {
+		expect(translation, translation).to.match(/Disk\ full/g);
 	});
 });
 describe("translating pt-PT string: O comando Input ultrapassou o final do ficheiro", function () {
@@ -331,8 +331,8 @@ describe("translating pt-PT string: O comando Input ultrapassou o final do fiche
 		});
 	});
 
-	it("should return the english version: Input past end of file", function () {
-		expect(translation, translation).to.equal("Input past end of file");
+	it("should return one of the english versions: Input past end of file", function () {
+		expect(translation, translation).to.match(/Input\ past\ end\ of\ file/g);
 	});
 });
 describe("translating pt-PT string: Demasiados ficheiros", function () {
@@ -347,8 +347,8 @@ describe("translating pt-PT string: Demasiados ficheiros", function () {
 		});
 	});
 
-	it("should return the english version: Too many files", function () {
-		expect(translation, translation).to.equal("Too many files");
+	it("should return one of the english versions: Too many files", function () {
+		expect(translation, translation).to.match(/Too\ many\ files/g);
 	});
 });
 describe("translating pt-PT string: Dispositivo não disponível", function () {
@@ -363,8 +363,8 @@ describe("translating pt-PT string: Dispositivo não disponível", function () {
 		});
 	});
 
-	it("should return the english version: Device unavailable", function () {
-		expect(translation, translation).to.equal("Device unavailable");
+	it("should return one of the english versions: Device unavailable", function () {
+		expect(translation, translation).to.match(/Device\ unavailable/g);
 	});
 });
 describe("translating pt-PT string: Permissão negada", function () {
@@ -379,8 +379,8 @@ describe("translating pt-PT string: Permissão negada", function () {
 		});
 	});
 
-	it("should return the english version: Permission denied", function () {
-		expect(translation, translation).to.equal("Permission denied");
+	it("should return one of the english versions: Permission denied", function () {
+		expect(translation, translation).to.match(/Permission\ denied/g);
 	});
 });
 describe("translating pt-PT string: O disco não está preparado", function () {
@@ -395,8 +395,8 @@ describe("translating pt-PT string: O disco não está preparado", function () {
 		});
 	});
 
-	it("should return the english version: Disk not ready", function () {
-		expect(translation, translation).to.equal("Disk not ready");
+	it("should return one of the english versions: Disk not ready", function () {
+		expect(translation, translation).to.match(/Disk\ not\ ready/g);
 	});
 });
 describe("translating pt-PT string: Não é possível mudar o nome para uma unidade diferente", function () {
@@ -411,8 +411,8 @@ describe("translating pt-PT string: Não é possível mudar o nome para uma unid
 		});
 	});
 
-	it("should return the english version: Can't rename with different drive", function () {
-		expect(translation, translation).to.equal("Can't rename with different drive");
+	it("should return one of the english versions: Can't rename with different drive", function () {
+		expect(translation, translation).to.match(/Can\'t\ rename\ with\ different\ drive/g);
 	});
 });
 describe("translating pt-PT string: Erro de acesso a caminho/ficheiro", function () {
@@ -427,8 +427,8 @@ describe("translating pt-PT string: Erro de acesso a caminho/ficheiro", function
 		});
 	});
 
-	it("should return the english version: Path/File access error", function () {
-		expect(translation, translation).to.equal("Path/File access error");
+	it("should return one of the english versions: Path/File access error", function () {
+		expect(translation, translation).to.match(/Path\/File\ access\ error/g);
 	});
 });
 describe("translating pt-PT string: Caminho não encontrado", function () {
@@ -443,8 +443,8 @@ describe("translating pt-PT string: Caminho não encontrado", function () {
 		});
 	});
 
-	it("should return the english version: Path not found", function () {
-		expect(translation, translation).to.equal("Path not found");
+	it("should return one of the english versions: Path not found", function () {
+		expect(translation, translation).to.match(/Path\ not\ found/g);
 	});
 });
 describe("translating pt-PT string: Variável de objeto ou variável de bloco With não definidos", function () {
@@ -459,8 +459,8 @@ describe("translating pt-PT string: Variável de objeto ou variável de bloco Wi
 		});
 	});
 
-	it("should return the english version: Object variable or With block variable not set", function () {
-		expect(translation, translation).to.equal("Object variable or With block variable not set");
+	it("should return one of the english versions: Object variable or With block variable not set", function () {
+		expect(translation, translation).to.match(/Object\ variable\ or\ With\ block\ variable\ not\ set/g);
 	});
 });
 describe("translating pt-PT string: Loop com For não inicializado", function () {
@@ -475,8 +475,8 @@ describe("translating pt-PT string: Loop com For não inicializado", function ()
 		});
 	});
 
-	it("should return the english version: For loop not initialized", function () {
-		expect(translation, translation).to.equal("For loop not initialized");
+	it("should return one of the english versions: For loop not initialized", function () {
+		expect(translation, translation).to.match(/For\ loop\ not\ initialized/g);
 	});
 });
 describe("translating pt-PT string: Utilização incorreta de Null", function () {
@@ -491,8 +491,8 @@ describe("translating pt-PT string: Utilização incorreta de Null", function ()
 		});
 	});
 
-	it("should return the english version: Invalid use of Null", function () {
-		expect(translation, translation).to.equal("Invalid use of Null");
+	it("should return one of the english versions: Invalid use of Null", function () {
+		expect(translation, translation).to.match(/Invalid\ use\ of\ Null/g);
 	});
 });
 describe("translating pt-PT string: Não é possível criar o ficheiro temporário necessário", function () {
@@ -507,8 +507,8 @@ describe("translating pt-PT string: Não é possível criar o ficheiro temporár
 		});
 	});
 
-	it("should return the english version: Can't create necessary temporary file", function () {
-		expect(translation, translation).to.equal("Can't create necessary temporary file");
+	it("should return one of the english versions: Can't create necessary temporary file", function () {
+		expect(translation, translation).to.match(/Can\'t\ create\ necessary\ temporary\ file/g);
 	});
 });
 describe("translating pt-PT string: Objeto necessário", function () {
@@ -523,8 +523,8 @@ describe("translating pt-PT string: Objeto necessário", function () {
 		});
 	});
 
-	it("should return the english version: Object required", function () {
-		expect(translation, translation).to.equal("Object required");
+	it("should return one of the english versions: Object required", function () {
+		expect(translation, translation).to.match(/Object\ required/g);
 	});
 });
 describe("translating pt-PT string: O servidor Automation não consegue criar o objeto", function () {
@@ -539,8 +539,8 @@ describe("translating pt-PT string: O servidor Automation não consegue criar o 
 		});
 	});
 
-	it("should return the english version: Automation server can't create object", function () {
-		expect(translation, translation).to.equal("Automation server can't create object");
+	it("should return one of the english versions: Automation server can't create object", function () {
+		expect(translation, translation).to.match(/Automation\ server\ can\'t\ create\ object/g);
 	});
 });
 describe("translating pt-PT string: Class não suporta Automation", function () {
@@ -555,8 +555,8 @@ describe("translating pt-PT string: Class não suporta Automation", function () 
 		});
 	});
 
-	it("should return the english version: Class doesn't support Automation", function () {
-		expect(translation, translation).to.equal("Class doesn't support Automation");
+	it("should return one of the english versions: Class doesn't support Automation", function () {
+		expect(translation, translation).to.match(/Class\ doesn\'t\ support\ Automation/g);
 	});
 });
 describe("translating pt-PT string: Nome de ficheiro ou classe não encontrado durante a operação Automation", function () {
@@ -571,8 +571,8 @@ describe("translating pt-PT string: Nome de ficheiro ou classe não encontrado d
 		});
 	});
 
-	it("should return the english version: File name or class name not found during Automation operation", function () {
-		expect(translation, translation).to.equal("File name or class name not found during Automation operation");
+	it("should return one of the english versions: File name or class name not found during Automation operation", function () {
+		expect(translation, translation).to.match(/File\ name\ or\ class\ name\ not\ found\ during\ Automation\ operation/g);
 	});
 });
 describe("translating pt-PT string: O objeto não suporta esta propriedade ou método", function () {
@@ -587,8 +587,8 @@ describe("translating pt-PT string: O objeto não suporta esta propriedade ou m�
 		});
 	});
 
-	it("should return the english version: Object doesn't support this property or method", function () {
-		expect(translation, translation).to.equal("Object doesn't support this property or method");
+	it("should return one of the english versions: Object doesn't support this property or method", function () {
+		expect(translation, translation).to.match(/Object\ doesn\'t\ support\ this\ property\ or\ method/g);
 	});
 });
 describe("translating pt-PT string: Erro de Automation", function () {
@@ -603,8 +603,8 @@ describe("translating pt-PT string: Erro de Automation", function () {
 		});
 	});
 
-	it("should return the english version: Automation error", function () {
-		expect(translation, translation).to.equal("Automation error");
+	it("should return one of the english versions: Automation error", function () {
+		expect(translation, translation).to.match(/Automation\ error/g);
 	});
 });
 describe("translating pt-PT string: O objeto não suporta esta ação", function () {
@@ -619,8 +619,8 @@ describe("translating pt-PT string: O objeto não suporta esta ação", function
 		});
 	});
 
-	it("should return the english version: Object doesn't support this action", function () {
-		expect(translation, translation).to.equal("Object doesn't support this action");
+	it("should return one of the english versions: Object doesn't support this action", function () {
+		expect(translation, translation).to.match(/Object\ doesn\'t\ support\ this\ action/g);
 	});
 });
 describe("translating pt-PT string: O objeto não suporta argumentos com nomes", function () {
@@ -635,8 +635,8 @@ describe("translating pt-PT string: O objeto não suporta argumentos com nomes",
 		});
 	});
 
-	it("should return the english version: Object doesn't support named arguments", function () {
-		expect(translation, translation).to.equal("Object doesn't support named arguments");
+	it("should return one of the english versions: Object doesn't support named arguments", function () {
+		expect(translation, translation).to.match(/Object\ doesn\'t\ support\ named\ arguments/g);
 	});
 });
 describe("translating pt-PT string: O objeto não suporta a definição de local atual", function () {
@@ -651,8 +651,8 @@ describe("translating pt-PT string: O objeto não suporta a definição de local
 		});
 	});
 
-	it("should return the english version: Object doesn't support current locale setting", function () {
-		expect(translation, translation).to.equal("Object doesn't support current locale setting");
+	it("should return one of the english versions: Object doesn't support current locale setting", function () {
+		expect(translation, translation).to.match(/Object\ doesn\'t\ support\ current\ locale\ setting/g);
 	});
 });
 describe("translating pt-PT string: Nome de argumento não encontrado", function () {
@@ -667,8 +667,8 @@ describe("translating pt-PT string: Nome de argumento não encontrado", function
 		});
 	});
 
-	it("should return the english version: Named argument not found", function () {
-		expect(translation, translation).to.equal("Named argument not found");
+	it("should return one of the english versions: Named argument not found", function () {
+		expect(translation, translation).to.match(/Named\ argument\ not\ found/g);
 	});
 });
 describe("translating pt-PT string: O argumento não é opcional", function () {
@@ -683,8 +683,8 @@ describe("translating pt-PT string: O argumento não é opcional", function () {
 		});
 	});
 
-	it("should return the english version: Argument not optional", function () {
-		expect(translation, translation).to.equal("Argument not optional");
+	it("should return one of the english versions: Argument not optional", function () {
+		expect(translation, translation).to.match(/Argument\ not\ optional/g);
 	});
 });
 describe("translating pt-PT string: Número errado de argumentos ou atribuição inválida de propriedade", function () {
@@ -699,8 +699,8 @@ describe("translating pt-PT string: Número errado de argumentos ou atribuição
 		});
 	});
 
-	it("should return the english version: Wrong number of arguments or invalid property assignment", function () {
-		expect(translation, translation).to.equal("Wrong number of arguments or invalid property assignment");
+	it("should return one of the english versions: Wrong number of arguments or invalid property assignment", function () {
+		expect(translation, translation).to.match(/Wrong\ number\ of\ arguments\ or\ invalid\ property\ assignment/g);
 	});
 });
 describe("translating pt-PT string: O objeto não é uma coleção", function () {
@@ -715,8 +715,8 @@ describe("translating pt-PT string: O objeto não é uma coleção", function ()
 		});
 	});
 
-	it("should return the english version: Object not a collection", function () {
-		expect(translation, translation).to.equal("Object not a collection");
+	it("should return one of the english versions: Object not a collection", function () {
+		expect(translation, translation).to.match(/Object\ not\ a\ collection/g);
 	});
 });
 describe("translating pt-PT string: A função DLL especificada não foi encontrada", function () {
@@ -731,8 +731,8 @@ describe("translating pt-PT string: A função DLL especificada não foi encontr
 		});
 	});
 
-	it("should return the english version: Specified DLL function not found", function () {
-		expect(translation, translation).to.equal("Specified DLL function not found");
+	it("should return one of the english versions: Specified DLL function not found", function () {
+		expect(translation, translation).to.match(/Specified\ DLL\ function\ not\ found/g);
 	});
 });
 describe("translating pt-PT string: A variável utiliza um tipo de Automation não suportado em JavaScript", function () {
@@ -747,8 +747,8 @@ describe("translating pt-PT string: A variável utiliza um tipo de Automation n�
 		});
 	});
 
-	it("should return the english version: Variable uses an Automation type not supported in JavaScript", function () {
-		expect(translation, translation).to.equal("Variable uses an Automation type not supported in JavaScript");
+	it("should return one of the english versions: Variable uses an Automation type not supported in JavaScript", function () {
+		expect(translation, translation).to.match(/Variable\ uses\ an\ Automation\ type\ not\ supported\ in\ JavaScript/g);
 	});
 });
 describe("translating pt-PT string: O servidor remoto não existe ou não está disponível", function () {
@@ -763,8 +763,8 @@ describe("translating pt-PT string: O servidor remoto não existe ou não está 
 		});
 	});
 
-	it("should return the english version: The remote server machine does not exist or is unavailable", function () {
-		expect(translation, translation).to.equal("The remote server machine does not exist or is unavailable");
+	it("should return one of the english versions: The remote server machine does not exist or is unavailable", function () {
+		expect(translation, translation).to.match(/The\ remote\ server\ machine\ does\ not\ exist\ or\ is\ unavailable/g);
 	});
 });
 describe("translating pt-PT string: Não é possível atribuir um valor à variável", function () {
@@ -779,8 +779,8 @@ describe("translating pt-PT string: Não é possível atribuir um valor à vari�
 		});
 	});
 
-	it("should return the english version: Cannot assign to variable", function () {
-		expect(translation, translation).to.equal("Cannot assign to variable");
+	it("should return one of the english versions: Cannot assign to variable", function () {
+		expect(translation, translation).to.match(/Cannot\ assign\ to\ variable/g);
 	});
 });
 describe("translating pt-PT string: Não é seguro processar o script do objeto", function () {
@@ -795,8 +795,8 @@ describe("translating pt-PT string: Não é seguro processar o script do objeto"
 		});
 	});
 
-	it("should return the english version: Object not safe for scripting", function () {
-		expect(translation, translation).to.equal("Object not safe for scripting");
+	it("should return one of the english versions: Object not safe for scripting", function () {
+		expect(translation, translation).to.match(/Object\ not\ safe\ for\ scripting/g);
 	});
 });
 describe("translating pt-PT string: Não é seguro iniciar o objeto", function () {
@@ -811,8 +811,8 @@ describe("translating pt-PT string: Não é seguro iniciar o objeto", function (
 		});
 	});
 
-	it("should return the english version: Object not safe for initializing", function () {
-		expect(translation, translation).to.equal("Object not safe for initializing");
+	it("should return one of the english versions: Object not safe for initializing", function () {
+		expect(translation, translation).to.match(/Object\ not\ safe\ for\ initializing/g);
 	});
 });
 describe("translating pt-PT string: Não é seguro criar objeto", function () {
@@ -827,8 +827,8 @@ describe("translating pt-PT string: Não é seguro criar objeto", function () {
 		});
 	});
 
-	it("should return the english version: Object not safe for creating", function () {
-		expect(translation, translation).to.equal("Object not safe for creating");
+	it("should return one of the english versions: Object not safe for creating", function () {
+		expect(translation, translation).to.match(/Object\ not\ safe\ for\ creating/g);
 	});
 });
 describe("translating pt-PT string: Ocorreu uma exceção", function () {
@@ -843,8 +843,8 @@ describe("translating pt-PT string: Ocorreu uma exceção", function () {
 		});
 	});
 
-	it("should return the english version: An exception occurred", function () {
-		expect(translation, translation).to.equal("An exception occurred");
+	it("should return one of the english versions: An exception occurred", function () {
+		expect(translation, translation).to.match(/An\ exception\ occurred/g);
 	});
 });
 describe("translating pt-PT string: Memória esgotada", function () {
@@ -859,8 +859,8 @@ describe("translating pt-PT string: Memória esgotada", function () {
 		});
 	});
 
-	it("should return the english version: Out of memory", function () {
-		expect(translation, translation).to.equal("Out of memory");
+	it("should return one of the english versions: Out of memory or Out of memory", function () {
+		expect(translation, translation).to.match(/Out\ of\ memory|Out\ of\ memory/g);
 	});
 });
 describe("translating pt-PT string: Erro de sintaxe", function () {
@@ -875,8 +875,8 @@ describe("translating pt-PT string: Erro de sintaxe", function () {
 		});
 	});
 
-	it("should return the english version: Syntax error", function () {
-		expect(translation, translation).to.equal("Syntax error");
+	it("should return one of the english versions: Syntax error", function () {
+		expect(translation, translation).to.match(/Syntax\ error/g);
 	});
 });
 describe("translating pt-PT string: Caráter ':' esperado", function () {
@@ -891,8 +891,8 @@ describe("translating pt-PT string: Caráter ':' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected ':'", function () {
-		expect(translation, translation).to.equal("Expected ':'");
+	it("should return one of the english versions: Expected ':'", function () {
+		expect(translation, translation).to.match(/Expected\ \'\:\'/g);
 	});
 });
 describe("translating pt-PT string: Caráter ';' esperado", function () {
@@ -907,8 +907,8 @@ describe("translating pt-PT string: Caráter ';' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected ';'", function () {
-		expect(translation, translation).to.equal("Expected ';'");
+	it("should return one of the english versions: Expected ';'", function () {
+		expect(translation, translation).to.match(/Expected\ \'\;\'/g);
 	});
 });
 describe("translating pt-PT string: Caráter '(' esperado", function () {
@@ -923,8 +923,8 @@ describe("translating pt-PT string: Caráter '(' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected '('", function () {
-		expect(translation, translation).to.equal("Expected '('");
+	it("should return one of the english versions: Expected '('", function () {
+		expect(translation, translation).to.match(/Expected\ \'\(\'/g);
 	});
 });
 describe("translating pt-PT string: Caráter ')' esperado", function () {
@@ -939,8 +939,8 @@ describe("translating pt-PT string: Caráter ')' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected ')'", function () {
-		expect(translation, translation).to.equal("Expected ')'");
+	it("should return one of the english versions: Expected ')'", function () {
+		expect(translation, translation).to.match(/Expected\ \'\)\'/g);
 	});
 });
 describe("translating pt-PT string: Caráter ']' esperado", function () {
@@ -955,8 +955,8 @@ describe("translating pt-PT string: Caráter ']' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected ']'", function () {
-		expect(translation, translation).to.equal("Expected ']'");
+	it("should return one of the english versions: Expected ']'", function () {
+		expect(translation, translation).to.match(/Expected\ \'\]\'/g);
 	});
 });
 describe("translating pt-PT string: Caráter '{' esperado", function () {
@@ -971,8 +971,8 @@ describe("translating pt-PT string: Caráter '{' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected '{'", function () {
-		expect(translation, translation).to.equal("Expected '{'");
+	it("should return one of the english versions: Expected '{'", function () {
+		expect(translation, translation).to.match(/Expected\ \'\{\'/g);
 	});
 });
 describe("translating pt-PT string: Caráter '}' esperado", function () {
@@ -987,8 +987,8 @@ describe("translating pt-PT string: Caráter '}' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected '}'", function () {
-		expect(translation, translation).to.equal("Expected '}'");
+	it("should return one of the english versions: Expected '}'", function () {
+		expect(translation, translation).to.match(/Expected\ \'\}\'/g);
 	});
 });
 describe("translating pt-PT string: Identificador esperado", function () {
@@ -1003,8 +1003,8 @@ describe("translating pt-PT string: Identificador esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected identifier", function () {
-		expect(translation, translation).to.equal("Expected identifier");
+	it("should return one of the english versions: Expected identifier", function () {
+		expect(translation, translation).to.match(/Expected\ identifier/g);
 	});
 });
 describe("translating pt-PT string: Caráter '=' esperado", function () {
@@ -1019,8 +1019,8 @@ describe("translating pt-PT string: Caráter '=' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected '='", function () {
-		expect(translation, translation).to.equal("Expected '='");
+	it("should return one of the english versions: Expected '='", function () {
+		expect(translation, translation).to.match(/Expected\ \'\=\'/g);
 	});
 });
 describe("translating pt-PT string: Caráter '/' esperado", function () {
@@ -1035,8 +1035,8 @@ describe("translating pt-PT string: Caráter '/' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected '/'", function () {
-		expect(translation, translation).to.equal("Expected '/'");
+	it("should return one of the english versions: Expected '/'", function () {
+		expect(translation, translation).to.match(/Expected\ \'\/\'/g);
 	});
 });
 describe("translating pt-PT string: Número inválido", function () {
@@ -1051,8 +1051,8 @@ describe("translating pt-PT string: Número inválido", function () {
 		});
 	});
 
-	it("should return the english version: Invalid number", function () {
-		expect(translation, translation).to.equal("Invalid number");
+	it("should return one of the english versions: Invalid number", function () {
+		expect(translation, translation).to.match(/Invalid\ number/g);
 	});
 });
 describe("translating pt-PT string: Caráter inválido", function () {
@@ -1067,8 +1067,8 @@ describe("translating pt-PT string: Caráter inválido", function () {
 		});
 	});
 
-	it("should return the english version: Invalid character", function () {
-		expect(translation, translation).to.equal("Invalid character");
+	it("should return one of the english versions: Invalid character", function () {
+		expect(translation, translation).to.match(/Invalid\ character/g);
 	});
 });
 describe("translating pt-PT string: Constante de cadeia não terminada", function () {
@@ -1083,8 +1083,8 @@ describe("translating pt-PT string: Constante de cadeia não terminada", functio
 		});
 	});
 
-	it("should return the english version: Unterminated string constant", function () {
-		expect(translation, translation).to.equal("Unterminated string constant");
+	it("should return one of the english versions: Unterminated string constant", function () {
+		expect(translation, translation).to.match(/Unterminated\ string\ constant/g);
 	});
 });
 describe("translating pt-PT string: Comentário não terminado", function () {
@@ -1099,8 +1099,8 @@ describe("translating pt-PT string: Comentário não terminado", function () {
 		});
 	});
 
-	it("should return the english version: Unterminated comment", function () {
-		expect(translation, translation).to.equal("Unterminated comment");
+	it("should return one of the english versions: Unterminated comment", function () {
+		expect(translation, translation).to.match(/Unterminated\ comment/g);
 	});
 });
 describe("translating pt-PT string: Instrução 'return' fora da função", function () {
@@ -1115,8 +1115,8 @@ describe("translating pt-PT string: Instrução 'return' fora da função", func
 		});
 	});
 
-	it("should return the english version: 'return' statement outside of function", function () {
-		expect(translation, translation).to.equal("'return' statement outside of function");
+	it("should return one of the english versions: 'return' statement outside of function", function () {
+		expect(translation, translation).to.match(/\'return\'\ statement\ outside\ of\ function/g);
 	});
 });
 describe("translating pt-PT string: Não é permitido 'break' fora do loop", function () {
@@ -1131,8 +1131,8 @@ describe("translating pt-PT string: Não é permitido 'break' fora do loop", fun
 		});
 	});
 
-	it("should return the english version: Can't have 'break' outside of loop", function () {
-		expect(translation, translation).to.equal("Can't have 'break' outside of loop");
+	it("should return one of the english versions: Can't have 'break' outside of loop", function () {
+		expect(translation, translation).to.match(/Can\'t\ have\ \'break\'\ outside\ of\ loop/g);
 	});
 });
 describe("translating pt-PT string: Não é permitido 'continue' fora do loop", function () {
@@ -1147,8 +1147,8 @@ describe("translating pt-PT string: Não é permitido 'continue' fora do loop", 
 		});
 	});
 
-	it("should return the english version: Can't have 'continue' outside of loop", function () {
-		expect(translation, translation).to.equal("Can't have 'continue' outside of loop");
+	it("should return one of the english versions: Can't have 'continue' outside of loop", function () {
+		expect(translation, translation).to.match(/Can\'t\ have\ \'continue\'\ outside\ of\ loop/g);
 	});
 });
 describe("translating pt-PT string: Dígito hexadecimal esperado", function () {
@@ -1163,8 +1163,8 @@ describe("translating pt-PT string: Dígito hexadecimal esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected hexadecimal digit", function () {
-		expect(translation, translation).to.equal("Expected hexadecimal digit");
+	it("should return one of the english versions: Expected hexadecimal digit", function () {
+		expect(translation, translation).to.match(/Expected\ hexadecimal\ digit/g);
 	});
 });
 describe("translating pt-PT string: 'while' esperado", function () {
@@ -1179,8 +1179,8 @@ describe("translating pt-PT string: 'while' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected 'while'", function () {
-		expect(translation, translation).to.equal("Expected 'while'");
+	it("should return one of the english versions: Expected 'while'", function () {
+		expect(translation, translation).to.match(/Expected\ \'while\'/g);
 	});
 });
 describe("translating pt-PT string: Rótulo redefinido", function () {
@@ -1195,8 +1195,8 @@ describe("translating pt-PT string: Rótulo redefinido", function () {
 		});
 	});
 
-	it("should return the english version: Label redefined", function () {
-		expect(translation, translation).to.equal("Label redefined");
+	it("should return one of the english versions: Label redefined", function () {
+		expect(translation, translation).to.match(/Label\ redefined/g);
 	});
 });
 describe("translating pt-PT string: Rótulo não encontrado", function () {
@@ -1211,8 +1211,8 @@ describe("translating pt-PT string: Rótulo não encontrado", function () {
 		});
 	});
 
-	it("should return the english version: Label not found", function () {
-		expect(translation, translation).to.equal("Label not found");
+	it("should return one of the english versions: Label not found", function () {
+		expect(translation, translation).to.match(/Label\ not\ found/g);
 	});
 });
 describe("translating pt-PT string: 'default' só pode aparecer uma vez numa instrução 'switch'", function () {
@@ -1227,8 +1227,8 @@ describe("translating pt-PT string: 'default' só pode aparecer uma vez numa ins
 		});
 	});
 
-	it("should return the english version: 'default' can only appear once in a 'switch' statement", function () {
-		expect(translation, translation).to.equal("'default' can only appear once in a 'switch' statement");
+	it("should return one of the english versions: 'default' can only appear once in a 'switch' statement", function () {
+		expect(translation, translation).to.match(/\'default\'\ can\ only\ appear\ once\ in\ a\ \'switch\'\ statement/g);
 	});
 });
 describe("translating pt-PT string: Identificador, cadeia ou número esperado", function () {
@@ -1243,8 +1243,8 @@ describe("translating pt-PT string: Identificador, cadeia ou número esperado", 
 		});
 	});
 
-	it("should return the english version: Expected identifier, string or number", function () {
-		expect(translation, translation).to.equal("Expected identifier, string or number");
+	it("should return one of the english versions: Expected identifier, string or number", function () {
+		expect(translation, translation).to.match(/Expected\ identifier\,\ string\ or\ number/g);
 	});
 });
 describe("translating pt-PT string: Caráter '@end' esperado", function () {
@@ -1259,8 +1259,8 @@ describe("translating pt-PT string: Caráter '@end' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected '@end'", function () {
-		expect(translation, translation).to.equal("Expected '@end'");
+	it("should return one of the english versions: Expected '@end'", function () {
+		expect(translation, translation).to.match(/Expected\ \'\@end\'/g);
 	});
 });
 describe("translating pt-PT string: A compilação condicional está desativada", function () {
@@ -1275,8 +1275,8 @@ describe("translating pt-PT string: A compilação condicional está desativada"
 		});
 	});
 
-	it("should return the english version: Conditional compilation is turned off", function () {
-		expect(translation, translation).to.equal("Conditional compilation is turned off");
+	it("should return one of the english versions: Conditional compilation is turned off", function () {
+		expect(translation, translation).to.match(/Conditional\ compilation\ is\ turned\ off/g);
 	});
 });
 describe("translating pt-PT string: Constante esperada", function () {
@@ -1291,8 +1291,8 @@ describe("translating pt-PT string: Constante esperada", function () {
 		});
 	});
 
-	it("should return the english version: Expected constant", function () {
-		expect(translation, translation).to.equal("Expected constant");
+	it("should return one of the english versions: Expected constant", function () {
+		expect(translation, translation).to.match(/Expected\ constant/g);
 	});
 });
 describe("translating pt-PT string: Caráter '@' esperado", function () {
@@ -1307,8 +1307,8 @@ describe("translating pt-PT string: Caráter '@' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected '@'", function () {
-		expect(translation, translation).to.equal("Expected '@'");
+	it("should return one of the english versions: Expected '@'", function () {
+		expect(translation, translation).to.match(/Expected\ \'\@\'/g);
 	});
 });
 describe("translating pt-PT string: 'catch' esperado", function () {
@@ -1323,8 +1323,8 @@ describe("translating pt-PT string: 'catch' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected 'catch'", function () {
-		expect(translation, translation).to.equal("Expected 'catch'");
+	it("should return one of the english versions: Expected 'catch'", function () {
+		expect(translation, translation).to.match(/Expected\ \'catch\'/g);
 	});
 });
 describe("translating pt-PT string: 'var' esperado", function () {
@@ -1339,8 +1339,8 @@ describe("translating pt-PT string: 'var' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Expected 'var'", function () {
-		expect(translation, translation).to.equal("Expected 'var'");
+	it("should return one of the english versions: Expected 'var'", function () {
+		expect(translation, translation).to.match(/Expected\ \'var\'/g);
 	});
 });
 describe("translating pt-PT string: a 'devolução de uma exceção' deverá ser seguida de uma expressão na mesma linha de código original", function () {
@@ -1355,8 +1355,8 @@ describe("translating pt-PT string: a 'devolução de uma exceção' deverá ser
 		});
 	});
 
-	it("should return the english version: 'throw' must be followed by an expression on the same source line", function () {
-		expect(translation, translation).to.equal("'throw' must be followed by an expression on the same source line");
+	it("should return one of the english versions: 'throw' must be followed by an expression on the same source line", function () {
+		expect(translation, translation).to.match(/\'throw\'\ must\ be\ followed\ by\ an\ expression\ on\ the\ same\ source\ line/g);
 	});
 });
 describe("translating pt-PT string: declarações 'com' não são permitidas no modo estrito", function () {
@@ -1371,8 +1371,8 @@ describe("translating pt-PT string: declarações 'com' não são permitidas no 
 		});
 	});
 
-	it("should return the english version: 'with' statements are not allowed in strict mode", function () {
-		expect(translation, translation).to.equal("'with' statements are not allowed in strict mode");
+	it("should return one of the english versions: 'with' statements are not allowed in strict mode", function () {
+		expect(translation, translation).to.match(/\'with\'\ statements\ are\ not\ allowed\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: Não são permitidos nomes de parâmetro formais duplicados no modo estrito", function () {
@@ -1387,8 +1387,8 @@ describe("translating pt-PT string: Não são permitidos nomes de parâmetro for
 		});
 	});
 
-	it("should return the english version: Duplicate formal parameter names not allowed in strict mode", function () {
-		expect(translation, translation).to.equal("Duplicate formal parameter names not allowed in strict mode");
+	it("should return one of the english versions: Duplicate formal parameter names not allowed in strict mode", function () {
+		expect(translation, translation).to.match(/Duplicate\ formal\ parameter\ names\ not\ allowed\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: Não são permitidos literais numéricos octais e carateres de escape no modo estrito", function () {
@@ -1403,8 +1403,8 @@ describe("translating pt-PT string: Não são permitidos literais numéricos oct
 		});
 	});
 
-	it("should return the english version: Octal numeric literals and escape characters not allowed in strict mode", function () {
-		expect(translation, translation).to.equal("Octal numeric literals and escape characters not allowed in strict mode");
+	it("should return one of the english versions: Octal numeric literals and escape characters not allowed in strict mode", function () {
+		expect(translation, translation).to.match(/Octal\ numeric\ literals\ and\ escape\ characters\ not\ allowed\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: Utilização inválida de 'eval' no modo estrito", function () {
@@ -1419,8 +1419,8 @@ describe("translating pt-PT string: Utilização inválida de 'eval' no modo est
 		});
 	});
 
-	it("should return the english version: Invalid usage of 'eval' in strict mode", function () {
-		expect(translation, translation).to.equal("Invalid usage of 'eval' in strict mode");
+	it("should return one of the english versions: Invalid usage of 'eval' in strict mode", function () {
+		expect(translation, translation).to.match(/Invalid\ usage\ of\ \'eval\'\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: Utilização inválida de 'arguments' no modo estrito", function () {
@@ -1435,8 +1435,8 @@ describe("translating pt-PT string: Utilização inválida de 'arguments' no mod
 		});
 	});
 
-	it("should return the english version: Invalid usage of 'arguments' in strict mode", function () {
-		expect(translation, translation).to.equal("Invalid usage of 'arguments' in strict mode");
+	it("should return one of the english versions: Invalid usage of 'arguments' in strict mode", function () {
+		expect(translation, translation).to.match(/Invalid\ usage\ of\ \'arguments\'\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: Chamada de eliminação com expressão não permitida no modo estrito", function () {
@@ -1451,8 +1451,8 @@ describe("translating pt-PT string: Chamada de eliminação com expressão não 
 		});
 	});
 
-	it("should return the english version: Calling delete on expression not allowed in strict mode", function () {
-		expect(translation, translation).to.equal("Calling delete on expression not allowed in strict mode");
+	it("should return one of the english versions: Calling delete on expression not allowed in strict mode", function () {
+		expect(translation, translation).to.match(/Calling\ delete\ on\ expression\ not\ allowed\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: Múltiplas definições de uma propriedade não permitidas no modo estrito", function () {
@@ -1467,8 +1467,8 @@ describe("translating pt-PT string: Múltiplas definições de uma propriedade n
 		});
 	});
 
-	it("should return the english version: Multiple definitions of a property not allowed in strict mode", function () {
-		expect(translation, translation).to.equal("Multiple definitions of a property not allowed in strict mode");
+	it("should return one of the english versions: Multiple definitions of a property not allowed in strict mode", function () {
+		expect(translation, translation).to.match(/Multiple\ definitions\ of\ a\ property\ not\ allowed\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: No modo restrito, não é possível aninhar declarações de função dentro de uma instrução ou bloco. Só podem aparecer no nível superior ou diretamente dentro do corpo de uma função.", function () {
@@ -1483,8 +1483,8 @@ describe("translating pt-PT string: No modo restrito, não é possível aninhar 
 		});
 	});
 
-	it("should return the english version: In strict mode, function declarations cannot be nested inside a statement or block. They may only appear at the top level or directly inside a function body.", function () {
-		expect(translation, translation).to.equal("In strict mode, function declarations cannot be nested inside a statement or block. They may only appear at the top level or directly inside a function body.");
+	it("should return one of the english versions: In strict mode, function declarations cannot be nested inside a statement or block. They may only appear at the top level or directly inside a function body.", function () {
+		expect(translation, translation).to.match(/In\ strict\ mode\,\ function\ declarations\ cannot\ be\ nested\ inside\ a\ statement\ or\ block\.\ They\ may\ only\ appear\ at\ the\ top\ level\ or\ directly\ inside\ a\ function\ body\./g);
 	});
 });
 describe("translating pt-PT string: A utilização de uma palavra-chave para um identificador é inválida", function () {
@@ -1499,8 +1499,8 @@ describe("translating pt-PT string: A utilização de uma palavra-chave para um 
 		});
 	});
 
-	it("should return the english version: The use of a keyword for an identifier is invalid", function () {
-		expect(translation, translation).to.equal("The use of a keyword for an identifier is invalid");
+	it("should return one of the english versions: The use of a keyword for an identifier is invalid", function () {
+		expect(translation, translation).to.match(/The\ use\ of\ a\ keyword\ for\ an\ identifier\ is\ invalid/g);
 	});
 });
 describe("translating pt-PT string: A utilização de uma palavra reservada futura para um identificador é inválida", function () {
@@ -1515,8 +1515,8 @@ describe("translating pt-PT string: A utilização de uma palavra reservada futu
 		});
 	});
 
-	it("should return the english version: The use of a future reserved word for an identifier is invalid", function () {
-		expect(translation, translation).to.equal("The use of a future reserved word for an identifier is invalid");
+	it("should return one of the english versions: The use of a future reserved word for an identifier is invalid", function () {
+		expect(translation, translation).to.match(/The\ use\ of\ a\ future\ reserved\ word\ for\ an\ identifier\ is\ invalid/g);
 	});
 });
 describe("translating pt-PT string: A utilização de uma palavra reservada futura para um identificador é inválida. O nome do identificador está reservado no modo restrito.", function () {
@@ -1531,8 +1531,8 @@ describe("translating pt-PT string: A utilização de uma palavra reservada futu
 		});
 	});
 
-	it("should return the english version: The use of a future reserved word for an identifier is invalid. The identifier name is reserved in strict mode.", function () {
-		expect(translation, translation).to.equal("The use of a future reserved word for an identifier is invalid. The identifier name is reserved in strict mode.");
+	it("should return one of the english versions: The use of a future reserved word for an identifier is invalid. The identifier name is reserved in strict mode.", function () {
+		expect(translation, translation).to.match(/The\ use\ of\ a\ future\ reserved\ word\ for\ an\ identifier\ is\ invalid\.\ The\ identifier\ name\ is\ reserved\ in\ strict\ mode\./g);
 	});
 });
 describe("translating pt-PT string: As funções setter têm de ter um argumento", function () {
@@ -1547,8 +1547,8 @@ describe("translating pt-PT string: As funções setter têm de ter um argumento
 		});
 	});
 
-	it("should return the english version: Setter functions must have one argument", function () {
-		expect(translation, translation).to.equal("Setter functions must have one argument");
+	it("should return one of the english versions: Setter functions must have one argument", function () {
+		expect(translation, translation).to.match(/Setter\ functions\ must\ have\ one\ argument/g);
 	});
 });
 describe("translating pt-PT string: Erro de compilação de JavaScript", function () {
@@ -1563,8 +1563,8 @@ describe("translating pt-PT string: Erro de compilação de JavaScript", functio
 		});
 	});
 
-	it("should return the english version: JavaScript compilation error", function () {
-		expect(translation, translation).to.equal("JavaScript compilation error");
+	it("should return one of the english versions: JavaScript compilation error", function () {
+		expect(translation, translation).to.match(/JavaScript\ compilation\ error/g);
 	});
 });
 describe("translating pt-PT string: Erro de runtime de JavaScript", function () {
@@ -1579,8 +1579,8 @@ describe("translating pt-PT string: Erro de runtime de JavaScript", function () 
 		});
 	});
 
-	it("should return the english version: JavaScript runtime error", function () {
-		expect(translation, translation).to.equal("JavaScript runtime error");
+	it("should return one of the english versions: JavaScript runtime error", function () {
+		expect(translation, translation).to.match(/JavaScript\ runtime\ error/g);
 	});
 });
 describe("translating pt-PT string: Erro em tempo de execução desconhecido", function () {
@@ -1595,8 +1595,8 @@ describe("translating pt-PT string: Erro em tempo de execução desconhecido", f
 		});
 	});
 
-	it("should return the english version: Unknown runtime error", function () {
-		expect(translation, translation).to.equal("Unknown runtime error");
+	it("should return one of the english versions: Unknown runtime error", function () {
+		expect(translation, translation).to.match(/Unknown\ runtime\ error/g);
 	});
 });
 describe("translating pt-PT string: Não é possível atribuir um valor a 'this'", function () {
@@ -1611,8 +1611,8 @@ describe("translating pt-PT string: Não é possível atribuir um valor a 'this'
 		});
 	});
 
-	it("should return the english version: Cannot assign to 'this'", function () {
-		expect(translation, translation).to.equal("Cannot assign to 'this'");
+	it("should return one of the english versions: Cannot assign to 'this'", function () {
+		expect(translation, translation).to.match(/Cannot\ assign\ to\ \'this\'/g);
 	});
 });
 describe("translating pt-PT string: Número esperado", function () {
@@ -1627,8 +1627,8 @@ describe("translating pt-PT string: Número esperado", function () {
 		});
 	});
 
-	it("should return the english version: Number expected", function () {
-		expect(translation, translation).to.equal("Number expected");
+	it("should return one of the english versions: Number expected or Number expected", function () {
+		expect(translation, translation).to.match(/Number\ expected|Number\ expected/g);
 	});
 });
 describe("translating pt-PT string: Função esperada", function () {
@@ -1643,8 +1643,8 @@ describe("translating pt-PT string: Função esperada", function () {
 		});
 	});
 
-	it("should return the english version: Function expected", function () {
-		expect(translation, translation).to.equal("Function expected");
+	it("should return one of the english versions: Function expected or Function expected or Function expected or Function expected or Function expected", function () {
+		expect(translation, translation).to.match(/Function\ expected|Function\ expected|Function\ expected|Function\ expected|Function\ expected/g);
 	});
 });
 describe("translating pt-PT string: Não é permitido atribuir um valor a um resultado de função", function () {
@@ -1659,8 +1659,8 @@ describe("translating pt-PT string: Não é permitido atribuir um valor a um res
 		});
 	});
 
-	it("should return the english version: Cannot assign to a function result", function () {
-		expect(translation, translation).to.equal("Cannot assign to a function result");
+	it("should return one of the english versions: Cannot assign to a function result", function () {
+		expect(translation, translation).to.match(/Cannot\ assign\ to\ a\ function\ result/g);
 	});
 });
 describe("translating pt-PT string: Não é possível indexar objeto", function () {
@@ -1675,8 +1675,8 @@ describe("translating pt-PT string: Não é possível indexar objeto", function 
 		});
 	});
 
-	it("should return the english version: Cannot index object", function () {
-		expect(translation, translation).to.equal("Cannot index object");
+	it("should return one of the english versions: Cannot index object", function () {
+		expect(translation, translation).to.match(/Cannot\ index\ object/g);
 	});
 });
 describe("translating pt-PT string: Cadeia esperada", function () {
@@ -1691,8 +1691,8 @@ describe("translating pt-PT string: Cadeia esperada", function () {
 		});
 	});
 
-	it("should return the english version: String expected", function () {
-		expect(translation, translation).to.equal("String expected");
+	it("should return one of the english versions: String expected or String expected", function () {
+		expect(translation, translation).to.match(/String\ expected|String\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto Date esperado", function () {
@@ -1707,8 +1707,8 @@ describe("translating pt-PT string: Objeto Date esperado", function () {
 		});
 	});
 
-	it("should return the english version: Date object expected", function () {
-		expect(translation, translation).to.equal("Date object expected");
+	it("should return one of the english versions: Date object expected", function () {
+		expect(translation, translation).to.match(/Date\ object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto esperado", function () {
@@ -1723,8 +1723,8 @@ describe("translating pt-PT string: Objeto esperado", function () {
 		});
 	});
 
-	it("should return the english version: Object expected", function () {
-		expect(translation, translation).to.equal("Object expected");
+	it("should return one of the english versions: Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected", function () {
+		expect(translation, translation).to.match(/Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Parte esquerda inválida na atribuição", function () {
@@ -1739,8 +1739,8 @@ describe("translating pt-PT string: Parte esquerda inválida na atribuição", f
 		});
 	});
 
-	it("should return the english version: Invalid left-hand side in assignment", function () {
-		expect(translation, translation).to.equal("Invalid left-hand side in assignment");
+	it("should return one of the english versions: Invalid left-hand side in assignment", function () {
+		expect(translation, translation).to.match(/Invalid\ left\-hand\ side\ in\ assignment/g);
 	});
 });
 describe("translating pt-PT string: Identificador não definido", function () {
@@ -1755,8 +1755,8 @@ describe("translating pt-PT string: Identificador não definido", function () {
 		});
 	});
 
-	it("should return the english version: Undefined identifier", function () {
-		expect(translation, translation).to.equal("Undefined identifier");
+	it("should return one of the english versions: Undefined identifier", function () {
+		expect(translation, translation).to.match(/Undefined\ identifier/g);
 	});
 });
 describe("translating pt-PT string: Booleano esperado", function () {
@@ -1771,8 +1771,8 @@ describe("translating pt-PT string: Booleano esperado", function () {
 		});
 	});
 
-	it("should return the english version: Boolean expected", function () {
-		expect(translation, translation).to.equal("Boolean expected");
+	it("should return one of the english versions: Boolean expected or Boolean expected", function () {
+		expect(translation, translation).to.match(/Boolean\ expected|Boolean\ expected/g);
 	});
 });
 describe("translating pt-PT string: Não é possível executar códigos a partir de um script livre", function () {
@@ -1787,8 +1787,8 @@ describe("translating pt-PT string: Não é possível executar códigos a partir
 		});
 	});
 
-	it("should return the english version: Can't execute code from a freed script", function () {
-		expect(translation, translation).to.equal("Can't execute code from a freed script");
+	it("should return one of the english versions: Can't execute code from a freed script", function () {
+		expect(translation, translation).to.match(/Can\'t\ execute\ code\ from\ a\ freed\ script/g);
 	});
 });
 describe("translating pt-PT string: Membro de objeto esperado", function () {
@@ -1803,8 +1803,8 @@ describe("translating pt-PT string: Membro de objeto esperado", function () {
 		});
 	});
 
-	it("should return the english version: Object member expected", function () {
-		expect(translation, translation).to.equal("Object member expected");
+	it("should return one of the english versions: Object member expected", function () {
+		expect(translation, translation).to.match(/Object\ member\ expected/g);
 	});
 });
 describe("translating pt-PT string: VBArray esperado", function () {
@@ -1819,8 +1819,8 @@ describe("translating pt-PT string: VBArray esperado", function () {
 		});
 	});
 
-	it("should return the english version: VBArray expected", function () {
-		expect(translation, translation).to.equal("VBArray expected");
+	it("should return one of the english versions: VBArray expected or VBArray expected or VBArray expected", function () {
+		expect(translation, translation).to.match(/VBArray\ expected|VBArray\ expected|VBArray\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto JavaScript esperado", function () {
@@ -1835,8 +1835,8 @@ describe("translating pt-PT string: Objeto JavaScript esperado", function () {
 		});
 	});
 
-	it("should return the english version: JavaScript object expected", function () {
-		expect(translation, translation).to.equal("JavaScript object expected");
+	it("should return one of the english versions: JavaScript object expected or JavaScript object expected or JavaScript object expected", function () {
+		expect(translation, translation).to.match(/JavaScript\ object\ expected|JavaScript\ object\ expected|JavaScript\ object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto Enumerator esperado", function () {
@@ -1851,8 +1851,8 @@ describe("translating pt-PT string: Objeto Enumerator esperado", function () {
 		});
 	});
 
-	it("should return the english version: Enumerator object expected", function () {
-		expect(translation, translation).to.equal("Enumerator object expected");
+	it("should return one of the english versions: Enumerator object expected or Enumerator object expected", function () {
+		expect(translation, translation).to.match(/Enumerator\ object\ expected|Enumerator\ object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto Regular Expression esperado", function () {
@@ -1867,8 +1867,8 @@ describe("translating pt-PT string: Objeto Regular Expression esperado", functio
 		});
 	});
 
-	it("should return the english version: Regular Expression object expected", function () {
-		expect(translation, translation).to.equal("Regular Expression object expected");
+	it("should return one of the english versions: Regular Expression object expected", function () {
+		expect(translation, translation).to.match(/Regular\ Expression\ object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Erro de sintaxe na expressão normal", function () {
@@ -1883,8 +1883,8 @@ describe("translating pt-PT string: Erro de sintaxe na expressão normal", funct
 		});
 	});
 
-	it("should return the english version: Syntax error in regular expression", function () {
-		expect(translation, translation).to.equal("Syntax error in regular expression");
+	it("should return one of the english versions: Syntax error in regular expression", function () {
+		expect(translation, translation).to.match(/Syntax\ error\ in\ regular\ expression/g);
 	});
 });
 describe("translating pt-PT string: Quantificador inesperado", function () {
@@ -1899,8 +1899,8 @@ describe("translating pt-PT string: Quantificador inesperado", function () {
 		});
 	});
 
-	it("should return the english version: Unexpected quantifier", function () {
-		expect(translation, translation).to.equal("Unexpected quantifier");
+	it("should return one of the english versions: Unexpected quantifier", function () {
+		expect(translation, translation).to.match(/Unexpected\ quantifier/g);
 	});
 });
 describe("translating pt-PT string: Caráter ']' esperado em expressão normal", function () {
@@ -1915,8 +1915,8 @@ describe("translating pt-PT string: Caráter ']' esperado em expressão normal",
 		});
 	});
 
-	it("should return the english version: Expected ']' in regular expression", function () {
-		expect(translation, translation).to.equal("Expected ']' in regular expression");
+	it("should return one of the english versions: Expected ']' in regular expression", function () {
+		expect(translation, translation).to.match(/Expected\ \'\]\'\ in\ regular\ expression/g);
 	});
 });
 describe("translating pt-PT string: Caráter ')' esperado em expressão normal", function () {
@@ -1931,8 +1931,8 @@ describe("translating pt-PT string: Caráter ')' esperado em expressão normal",
 		});
 	});
 
-	it("should return the english version: Expected ')' in regular expression", function () {
-		expect(translation, translation).to.equal("Expected ')' in regular expression");
+	it("should return one of the english versions: Expected ')' in regular expression", function () {
+		expect(translation, translation).to.match(/Expected\ \'\)\'\ in\ regular\ expression/g);
 	});
 });
 describe("translating pt-PT string: Intervalo inválido no conjunto de carateres", function () {
@@ -1947,8 +1947,8 @@ describe("translating pt-PT string: Intervalo inválido no conjunto de carateres
 		});
 	});
 
-	it("should return the english version: Invalid range in character set", function () {
-		expect(translation, translation).to.equal("Invalid range in character set");
+	it("should return one of the english versions: Invalid range in character set", function () {
+		expect(translation, translation).to.match(/Invalid\ range\ in\ character\ set/g);
 	});
 });
 describe("translating pt-PT string: Foi devolvida uma exceção mas desconhece-se a sua origem", function () {
@@ -1963,8 +1963,8 @@ describe("translating pt-PT string: Foi devolvida uma exceção mas desconhece-s
 		});
 	});
 
-	it("should return the english version: Exception thrown and not caught", function () {
-		expect(translation, translation).to.equal("Exception thrown and not caught");
+	it("should return one of the english versions: Exception thrown and not caught", function () {
+		expect(translation, translation).to.match(/Exception\ thrown\ and\ not\ caught/g);
 	});
 });
 describe("translating pt-PT string: A função não tem um objeto protótipo válido", function () {
@@ -1979,8 +1979,8 @@ describe("translating pt-PT string: A função não tem um objeto protótipo vá
 		});
 	});
 
-	it("should return the english version: Function does not have a valid prototype object", function () {
-		expect(translation, translation).to.equal("Function does not have a valid prototype object");
+	it("should return one of the english versions: Function does not have a valid prototype object", function () {
+		expect(translation, translation).to.match(/Function\ does\ not\ have\ a\ valid\ prototype\ object/g);
 	});
 });
 describe("translating pt-PT string: O URI a ser codificado contém um caráter inválido", function () {
@@ -1995,8 +1995,8 @@ describe("translating pt-PT string: O URI a ser codificado contém um caráter i
 		});
 	});
 
-	it("should return the english version: The URI to be encoded contains an invalid character", function () {
-		expect(translation, translation).to.equal("The URI to be encoded contains an invalid character");
+	it("should return one of the english versions: The URI to be encoded contains an invalid character", function () {
+		expect(translation, translation).to.match(/The\ URI\ to\ be\ encoded\ contains\ an\ invalid\ character/g);
 	});
 });
 describe("translating pt-PT string: O URI a ser descodificado não possui uma codificação válida", function () {
@@ -2011,8 +2011,8 @@ describe("translating pt-PT string: O URI a ser descodificado não possui uma co
 		});
 	});
 
-	it("should return the english version: The URI to be decoded is not a valid encoding", function () {
-		expect(translation, translation).to.equal("The URI to be decoded is not a valid encoding");
+	it("should return one of the english versions: The URI to be decoded is not a valid encoding", function () {
+		expect(translation, translation).to.match(/The\ URI\ to\ be\ decoded\ is\ not\ a\ valid\ encoding/g);
 	});
 });
 describe("translating pt-PT string: O número de dígitos fracionais está fora do intervalo", function () {
@@ -2027,8 +2027,8 @@ describe("translating pt-PT string: O número de dígitos fracionais está fora 
 		});
 	});
 
-	it("should return the english version: The number of fractional digits is out of range", function () {
-		expect(translation, translation).to.equal("The number of fractional digits is out of range");
+	it("should return one of the english versions: The number of fractional digits is out of range", function () {
+		expect(translation, translation).to.match(/The\ number\ of\ fractional\ digits\ is\ out\ of\ range/g);
 	});
 });
 describe("translating pt-PT string: A precisão está fora do intervalo", function () {
@@ -2043,8 +2043,8 @@ describe("translating pt-PT string: A precisão está fora do intervalo", functi
 		});
 	});
 
-	it("should return the english version: The precision is out of range", function () {
-		expect(translation, translation).to.equal("The precision is out of range");
+	it("should return one of the english versions: The precision is out of range", function () {
+		expect(translation, translation).to.match(/The\ precision\ is\ out\ of\ range/g);
 	});
 });
 describe("translating pt-PT string: Objeto 'Array' ou 'arguments' esperado", function () {
@@ -2059,8 +2059,8 @@ describe("translating pt-PT string: Objeto 'Array' ou 'arguments' esperado", fun
 		});
 	});
 
-	it("should return the english version: Array or arguments object expected", function () {
-		expect(translation, translation).to.equal("Array or arguments object expected");
+	it("should return one of the english versions: Array or arguments object expected or Array or arguments object expected", function () {
+		expect(translation, translation).to.match(/Array\ or\ arguments\ object\ expected|Array\ or\ arguments\ object\ expected/g);
 	});
 });
 describe("translating pt-PT string: O comprimento da matriz tem de ser um inteiro finito positivo", function () {
@@ -2075,8 +2075,8 @@ describe("translating pt-PT string: O comprimento da matriz tem de ser um inteir
 		});
 	});
 
-	it("should return the english version: Array length must be a finite positive integer", function () {
-		expect(translation, translation).to.equal("Array length must be a finite positive integer");
+	it("should return one of the english versions: Array length must be a finite positive integer", function () {
+		expect(translation, translation).to.match(/Array\ length\ must\ be\ a\ finite\ positive\ integer/g);
 	});
 });
 describe("translating pt-PT string: O comprimento da matriz tem de ter atribuído um número finito positivo", function () {
@@ -2091,8 +2091,8 @@ describe("translating pt-PT string: O comprimento da matriz tem de ter atribuíd
 		});
 	});
 
-	it("should return the english version: Array length must be assigned a finite positive number", function () {
-		expect(translation, translation).to.equal("Array length must be assigned a finite positive number");
+	it("should return one of the english versions: Array length must be assigned a finite positive number", function () {
+		expect(translation, translation).to.match(/Array\ length\ must\ be\ assigned\ a\ finite\ positive\ number/g);
 	});
 });
 describe("translating pt-PT string: Objeto 'Array' esperado", function () {
@@ -2107,8 +2107,8 @@ describe("translating pt-PT string: Objeto 'Array' esperado", function () {
 		});
 	});
 
-	it("should return the english version: Array object expected", function () {
-		expect(translation, translation).to.equal("Array object expected");
+	it("should return one of the english versions: Array object expected", function () {
+		expect(translation, translation).to.match(/Array\ object\ expected/g);
 	});
 });
 describe("translating pt-PT string: A referência circular no argumento 'value' não é suportada", function () {
@@ -2123,8 +2123,8 @@ describe("translating pt-PT string: A referência circular no argumento 'value' 
 		});
 	});
 
-	it("should return the english version: Circular reference in value argument not supported", function () {
-		expect(translation, translation).to.equal("Circular reference in value argument not supported");
+	it("should return one of the english versions: Circular reference in value argument not supported", function () {
+		expect(translation, translation).to.match(/Circular\ reference\ in\ value\ argument\ not\ supported/g);
 	});
 });
 describe("translating pt-PT string: Argumento 'replacer' inválido", function () {
@@ -2139,8 +2139,8 @@ describe("translating pt-PT string: Argumento 'replacer' inválido", function ()
 		});
 	});
 
-	it("should return the english version: Invalid replacer argument", function () {
-		expect(translation, translation).to.equal("Invalid replacer argument");
+	it("should return one of the english versions: Invalid replacer argument", function () {
+		expect(translation, translation).to.match(/Invalid\ replacer\ argument/g);
 	});
 });
 describe("translating pt-PT string: Lista de argumentos demasiado grande para aplicar", function () {
@@ -2155,8 +2155,8 @@ describe("translating pt-PT string: Lista de argumentos demasiado grande para ap
 		});
 	});
 
-	it("should return the english version: Argument list too large to apply", function () {
-		expect(translation, translation).to.equal("Argument list too large to apply");
+	it("should return one of the english versions: Argument list too large to apply", function () {
+		expect(translation, translation).to.match(/Argument\ list\ too\ large\ to\ apply/g);
 	});
 });
 describe("translating pt-PT string: Nova declaração da propriedade const", function () {
@@ -2171,8 +2171,8 @@ describe("translating pt-PT string: Nova declaração da propriedade const", fun
 		});
 	});
 
-	it("should return the english version: Redeclaration of const property", function () {
-		expect(translation, translation).to.equal("Redeclaration of const property");
+	it("should return one of the english versions: Redeclaration of const property", function () {
+		expect(translation, translation).to.match(/Redeclaration\ of\ const\ property/g);
 	});
 });
 describe("translating pt-PT string: Membro de objeto não configurável", function () {
@@ -2187,8 +2187,8 @@ describe("translating pt-PT string: Membro de objeto não configurável", functi
 		});
 	});
 
-	it("should return the english version: Object member not configurable", function () {
-		expect(translation, translation).to.equal("Object member not configurable");
+	it("should return one of the english versions: Object member not configurable", function () {
+		expect(translation, translation).to.match(/Object\ member\ not\ configurable/g);
 	});
 });
 describe("translating pt-PT string: Variável não definida no modo estrito", function () {
@@ -2203,8 +2203,8 @@ describe("translating pt-PT string: Variável não definida no modo estrito", fu
 		});
 	});
 
-	it("should return the english version: Variable undefined in strict mode", function () {
-		expect(translation, translation).to.equal("Variable undefined in strict mode");
+	it("should return one of the english versions: Variable undefined in strict mode", function () {
+		expect(translation, translation).to.match(/Variable\ undefined\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: Acesso à propriedade 'caller' de um objeto de função ou de argumentos não permitido no modo estrito", function () {
@@ -2219,8 +2219,8 @@ describe("translating pt-PT string: Acesso à propriedade 'caller' de um objeto 
 		});
 	});
 
-	it("should return the english version: Accessing the 'caller' property of a function or arguments object is not allowed in strict mode", function () {
-		expect(translation, translation).to.equal("Accessing the 'caller' property of a function or arguments object is not allowed in strict mode");
+	it("should return one of the english versions: Accessing the 'caller' property of a function or arguments object is not allowed in strict mode", function () {
+		expect(translation, translation).to.match(/Accessing\ the\ \'caller\'\ property\ of\ a\ function\ or\ arguments\ object\ is\ not\ allowed\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: Acesso à propriedade 'callee' de um objeto de argumentos não permitido no modo estrito", function () {
@@ -2235,8 +2235,8 @@ describe("translating pt-PT string: Acesso à propriedade 'callee' de um objeto 
 		});
 	});
 
-	it("should return the english version: Accessing the 'callee' property of an arguments object is not allowed in strict mode", function () {
-		expect(translation, translation).to.equal("Accessing the 'callee' property of an arguments object is not allowed in strict mode");
+	it("should return one of the english versions: Accessing the 'callee' property of an arguments object is not allowed in strict mode", function () {
+		expect(translation, translation).to.match(/Accessing\ the\ \'callee\'\ property\ of\ an\ arguments\ object\ is\ not\ allowed\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: Atribuição a propriedades só de leitura não permitida no modo estrito", function () {
@@ -2251,8 +2251,8 @@ describe("translating pt-PT string: Atribuição a propriedades só de leitura n
 		});
 	});
 
-	it("should return the english version: Assignment to read-only properties is not allowed in strict mode", function () {
-		expect(translation, translation).to.equal("Assignment to read-only properties is not allowed in strict mode");
+	it("should return one of the english versions: Assignment to read-only properties is not allowed in strict mode", function () {
+		expect(translation, translation).to.match(/Assignment\ to\ read\-only\ properties\ is\ not\ allowed\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: Não é possível criar a propriedade para um objeto não extensível", function () {
@@ -2267,8 +2267,8 @@ describe("translating pt-PT string: Não é possível criar a propriedade para u
 		});
 	});
 
-	it("should return the english version: Cannot create property for a non-extensible object", function () {
-		expect(translation, translation).to.equal("Cannot create property for a non-extensible object");
+	it("should return one of the english versions: Cannot create property for a non-extensible object", function () {
+		expect(translation, translation).to.match(/Cannot\ create\ property\ for\ a\ non\-extensible\ object/g);
 	});
 });
 describe("translating pt-PT string: Objeto esperado", function () {
@@ -2283,8 +2283,8 @@ describe("translating pt-PT string: Objeto esperado", function () {
 		});
 	});
 
-	it("should return the english version: Object expected", function () {
-		expect(translation, translation).to.equal("Object expected");
+	it("should return one of the english versions: Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected", function () {
+		expect(translation, translation).to.match(/Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto esperado", function () {
@@ -2299,8 +2299,8 @@ describe("translating pt-PT string: Objeto esperado", function () {
 		});
 	});
 
-	it("should return the english version: Object expected", function () {
-		expect(translation, translation).to.equal("Object expected");
+	it("should return one of the english versions: Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected", function () {
+		expect(translation, translation).to.match(/Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto esperado", function () {
@@ -2315,8 +2315,8 @@ describe("translating pt-PT string: Objeto esperado", function () {
 		});
 	});
 
-	it("should return the english version: Object expected", function () {
-		expect(translation, translation).to.equal("Object expected");
+	it("should return one of the english versions: Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected", function () {
+		expect(translation, translation).to.match(/Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto esperado", function () {
@@ -2331,8 +2331,8 @@ describe("translating pt-PT string: Objeto esperado", function () {
 		});
 	});
 
-	it("should return the english version: Object expected", function () {
-		expect(translation, translation).to.equal("Object expected");
+	it("should return one of the english versions: Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected", function () {
+		expect(translation, translation).to.match(/Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Função esperada", function () {
@@ -2347,8 +2347,8 @@ describe("translating pt-PT string: Função esperada", function () {
 		});
 	});
 
-	it("should return the english version: Function expected", function () {
-		expect(translation, translation).to.equal("Function expected");
+	it("should return one of the english versions: Function expected or Function expected or Function expected or Function expected or Function expected", function () {
+		expect(translation, translation).to.match(/Function\ expected|Function\ expected|Function\ expected|Function\ expected|Function\ expected/g);
 	});
 });
 describe("translating pt-PT string: Função esperada", function () {
@@ -2363,8 +2363,8 @@ describe("translating pt-PT string: Função esperada", function () {
 		});
 	});
 
-	it("should return the english version: Function expected", function () {
-		expect(translation, translation).to.equal("Function expected");
+	it("should return one of the english versions: Function expected or Function expected or Function expected or Function expected or Function expected", function () {
+		expect(translation, translation).to.match(/Function\ expected|Function\ expected|Function\ expected|Function\ expected|Function\ expected/g);
 	});
 });
 describe("translating pt-PT string: A propriedade não pode ter simultaneamente acessores e um valor", function () {
@@ -2379,8 +2379,8 @@ describe("translating pt-PT string: A propriedade não pode ter simultaneamente 
 		});
 	});
 
-	it("should return the english version: Property cannot have both accessors and a value", function () {
-		expect(translation, translation).to.equal("Property cannot have both accessors and a value");
+	it("should return one of the english versions: Property cannot have both accessors and a value", function () {
+		expect(translation, translation).to.match(/Property\ cannot\ have\ both\ accessors\ and\ a\ value/g);
 	});
 });
 describe("translating pt-PT string: 'this' é nulo ou não definido", function () {
@@ -2395,8 +2395,8 @@ describe("translating pt-PT string: 'this' é nulo ou não definido", function (
 		});
 	});
 
-	it("should return the english version: 'this' is null or undefined", function () {
-		expect(translation, translation).to.equal("'this' is null or undefined");
+	it("should return one of the english versions: 'this' is null or undefined", function () {
+		expect(translation, translation).to.match(/\'this\'\ is\ null\ or\ undefined/g);
 	});
 });
 describe("translating pt-PT string: Objeto esperado", function () {
@@ -2411,8 +2411,8 @@ describe("translating pt-PT string: Objeto esperado", function () {
 		});
 	});
 
-	it("should return the english version: Object expected", function () {
-		expect(translation, translation).to.equal("Object expected");
+	it("should return one of the english versions: Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected", function () {
+		expect(translation, translation).to.match(/Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Função esperada", function () {
@@ -2427,8 +2427,8 @@ describe("translating pt-PT string: Função esperada", function () {
 		});
 	});
 
-	it("should return the english version: Function expected", function () {
-		expect(translation, translation).to.equal("Function expected");
+	it("should return one of the english versions: Function expected or Function expected or Function expected or Function expected or Function expected", function () {
+		expect(translation, translation).to.match(/Function\ expected|Function\ expected|Function\ expected|Function\ expected|Function\ expected/g);
 	});
 });
 describe("translating pt-PT string: Cadeia esperada", function () {
@@ -2443,8 +2443,8 @@ describe("translating pt-PT string: Cadeia esperada", function () {
 		});
 	});
 
-	it("should return the english version: String expected", function () {
-		expect(translation, translation).to.equal("String expected");
+	it("should return one of the english versions: String expected or String expected", function () {
+		expect(translation, translation).to.match(/String\ expected|String\ expected/g);
 	});
 });
 describe("translating pt-PT string: Booleano esperado", function () {
@@ -2459,8 +2459,8 @@ describe("translating pt-PT string: Booleano esperado", function () {
 		});
 	});
 
-	it("should return the english version: Boolean expected", function () {
-		expect(translation, translation).to.equal("Boolean expected");
+	it("should return one of the english versions: Boolean expected or Boolean expected", function () {
+		expect(translation, translation).to.match(/Boolean\ expected|Boolean\ expected/g);
 	});
 });
 describe("translating pt-PT string: Data esperada", function () {
@@ -2475,8 +2475,8 @@ describe("translating pt-PT string: Data esperada", function () {
 		});
 	});
 
-	it("should return the english version: Date expected", function () {
-		expect(translation, translation).to.equal("Date expected");
+	it("should return one of the english versions: Date expected", function () {
+		expect(translation, translation).to.match(/Date\ expected/g);
 	});
 });
 describe("translating pt-PT string: Número esperado", function () {
@@ -2491,8 +2491,8 @@ describe("translating pt-PT string: Número esperado", function () {
 		});
 	});
 
-	it("should return the english version: Number expected", function () {
-		expect(translation, translation).to.equal("Number expected");
+	it("should return one of the english versions: Number expected or Number expected", function () {
+		expect(translation, translation).to.match(/Number\ expected|Number\ expected/g);
 	});
 });
 describe("translating pt-PT string: VBArray esperado", function () {
@@ -2507,8 +2507,8 @@ describe("translating pt-PT string: VBArray esperado", function () {
 		});
 	});
 
-	it("should return the english version: VBArray expected", function () {
-		expect(translation, translation).to.equal("VBArray expected");
+	it("should return one of the english versions: VBArray expected or VBArray expected or VBArray expected", function () {
+		expect(translation, translation).to.match(/VBArray\ expected|VBArray\ expected|VBArray\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto JavaScript esperado", function () {
@@ -2523,8 +2523,8 @@ describe("translating pt-PT string: Objeto JavaScript esperado", function () {
 		});
 	});
 
-	it("should return the english version: JavaScript object expected", function () {
-		expect(translation, translation).to.equal("JavaScript object expected");
+	it("should return one of the english versions: JavaScript object expected or JavaScript object expected or JavaScript object expected", function () {
+		expect(translation, translation).to.match(/JavaScript\ object\ expected|JavaScript\ object\ expected|JavaScript\ object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto Enumerator esperado", function () {
@@ -2539,8 +2539,8 @@ describe("translating pt-PT string: Objeto Enumerator esperado", function () {
 		});
 	});
 
-	it("should return the english version: Enumerator object expected", function () {
-		expect(translation, translation).to.equal("Enumerator object expected");
+	it("should return one of the english versions: Enumerator object expected or Enumerator object expected", function () {
+		expect(translation, translation).to.match(/Enumerator\ object\ expected|Enumerator\ object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto RegExp esperado", function () {
@@ -2555,8 +2555,8 @@ describe("translating pt-PT string: Objeto RegExp esperado", function () {
 		});
 	});
 
-	it("should return the english version: RegExp object expected", function () {
-		expect(translation, translation).to.equal("RegExp object expected");
+	it("should return one of the english versions: RegExp object expected", function () {
+		expect(translation, translation).to.match(/RegExp\ object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Argumento de função inválido", function () {
@@ -2571,8 +2571,8 @@ describe("translating pt-PT string: Argumento de função inválido", function (
 		});
 	});
 
-	it("should return the english version: Invalid function argument", function () {
-		expect(translation, translation).to.equal("Invalid function argument");
+	it("should return one of the english versions: Invalid function argument", function () {
+		expect(translation, translation).to.match(/Invalid\ function\ argument/g);
 	});
 });
 describe("translating pt-PT string: Objeto esperado", function () {
@@ -2587,8 +2587,8 @@ describe("translating pt-PT string: Objeto esperado", function () {
 		});
 	});
 
-	it("should return the english version: Object expected", function () {
-		expect(translation, translation).to.equal("Object expected");
+	it("should return one of the english versions: Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected", function () {
+		expect(translation, translation).to.match(/Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto JavaScript esperado", function () {
@@ -2603,8 +2603,8 @@ describe("translating pt-PT string: Objeto JavaScript esperado", function () {
 		});
 	});
 
-	it("should return the english version: JavaScript object expected", function () {
-		expect(translation, translation).to.equal("JavaScript object expected");
+	it("should return one of the english versions: JavaScript object expected or JavaScript object expected or JavaScript object expected", function () {
+		expect(translation, translation).to.match(/JavaScript\ object\ expected|JavaScript\ object\ expected|JavaScript\ object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Função esperada", function () {
@@ -2619,8 +2619,8 @@ describe("translating pt-PT string: Função esperada", function () {
 		});
 	});
 
-	it("should return the english version: Function expected", function () {
-		expect(translation, translation).to.equal("Function expected");
+	it("should return one of the english versions: Function expected or Function expected or Function expected or Function expected or Function expected", function () {
+		expect(translation, translation).to.match(/Function\ expected|Function\ expected|Function\ expected|Function\ expected|Function\ expected/g);
 	});
 });
 describe("translating pt-PT string: VBArray esperado", function () {
@@ -2635,8 +2635,8 @@ describe("translating pt-PT string: VBArray esperado", function () {
 		});
 	});
 
-	it("should return the english version: VBArray expected", function () {
-		expect(translation, translation).to.equal("VBArray expected");
+	it("should return one of the english versions: VBArray expected or VBArray expected or VBArray expected", function () {
+		expect(translation, translation).to.match(/VBArray\ expected|VBArray\ expected|VBArray\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto esperado", function () {
@@ -2651,8 +2651,8 @@ describe("translating pt-PT string: Objeto esperado", function () {
 		});
 	});
 
-	it("should return the english version: Object expected", function () {
-		expect(translation, translation).to.equal("Object expected");
+	it("should return one of the english versions: Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected", function () {
+		expect(translation, translation).to.match(/Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Objeto esperado", function () {
@@ -2667,8 +2667,8 @@ describe("translating pt-PT string: Objeto esperado", function () {
 		});
 	});
 
-	it("should return the english version: Object expected", function () {
-		expect(translation, translation).to.equal("Object expected");
+	it("should return one of the english versions: Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected or Object expected", function () {
+		expect(translation, translation).to.match(/Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected|Object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Propriedade 'length' inválida", function () {
@@ -2683,8 +2683,8 @@ describe("translating pt-PT string: Propriedade 'length' inválida", function ()
 		});
 	});
 
-	it("should return the english version: Invalid 'length' property", function () {
-		expect(translation, translation).to.equal("Invalid 'length' property");
+	it("should return one of the english versions: Invalid 'length' property", function () {
+		expect(translation, translation).to.match(/Invalid\ \'length\'\ property/g);
 	});
 });
 describe("translating pt-PT string: Objeto 'Array' ou 'arguments' esperado", function () {
@@ -2699,8 +2699,8 @@ describe("translating pt-PT string: Objeto 'Array' ou 'arguments' esperado", fun
 		});
 	});
 
-	it("should return the english version: Array or arguments object expected", function () {
-		expect(translation, translation).to.equal("Array or arguments object expected");
+	it("should return one of the english versions: Array or arguments object expected or Array or arguments object expected", function () {
+		expect(translation, translation).to.match(/Array\ or\ arguments\ object\ expected|Array\ or\ arguments\ object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Operando inválido", function () {
@@ -2715,8 +2715,8 @@ describe("translating pt-PT string: Operando inválido", function () {
 		});
 	});
 
-	it("should return the english version: Invalid Operand", function () {
-		expect(translation, translation).to.equal("Invalid Operand");
+	it("should return one of the english versions: Invalid Operand or Invalid Operand", function () {
+		expect(translation, translation).to.match(/Invalid\ Operand|Invalid\ Operand/g);
 	});
 });
 describe("translating pt-PT string: Operando inválido", function () {
@@ -2731,8 +2731,8 @@ describe("translating pt-PT string: Operando inválido", function () {
 		});
 	});
 
-	it("should return the english version: Invalid Operand", function () {
-		expect(translation, translation).to.equal("Invalid Operand");
+	it("should return one of the english versions: Invalid Operand or Invalid Operand", function () {
+		expect(translation, translation).to.match(/Invalid\ Operand|Invalid\ Operand/g);
 	});
 });
 describe("translating pt-PT string: Descritor de propriedade inválido", function () {
@@ -2747,8 +2747,8 @@ describe("translating pt-PT string: Descritor de propriedade inválido", functio
 		});
 	});
 
-	it("should return the english version: Invalid property descriptor", function () {
-		expect(translation, translation).to.equal("Invalid property descriptor");
+	it("should return one of the english versions: Invalid property descriptor", function () {
+		expect(translation, translation).to.match(/Invalid\ property\ descriptor/g);
 	});
 });
 describe("translating pt-PT string: Não é possível definir a propriedade: o objeto não é extensível", function () {
@@ -2763,8 +2763,8 @@ describe("translating pt-PT string: Não é possível definir a propriedade: o o
 		});
 	});
 
-	it("should return the english version: Cannot define property: object is not extensible", function () {
-		expect(translation, translation).to.equal("Cannot define property: object is not extensible");
+	it("should return one of the english versions: Cannot define property: object is not extensible", function () {
+		expect(translation, translation).to.match(/Cannot\ define\ property\:\ object\ is\ not\ extensible/g);
 	});
 });
 describe("translating pt-PT string: Não é possível redefinir uma propriedade não configurável", function () {
@@ -2779,8 +2779,8 @@ describe("translating pt-PT string: Não é possível redefinir uma propriedade 
 		});
 	});
 
-	it("should return the english version: Cannot redefine non-configurable property", function () {
-		expect(translation, translation).to.equal("Cannot redefine non-configurable property");
+	it("should return one of the english versions: Cannot redefine non-configurable property", function () {
+		expect(translation, translation).to.match(/Cannot\ redefine\ non\-configurable\ property/g);
 	});
 });
 describe("translating pt-PT string: Não é possível alterar uma propriedade não gravável", function () {
@@ -2795,8 +2795,8 @@ describe("translating pt-PT string: Não é possível alterar uma propriedade n�
 		});
 	});
 
-	it("should return the english version: Cannot modify non-writable property", function () {
-		expect(translation, translation).to.equal("Cannot modify non-writable property");
+	it("should return one of the english versions: Cannot modify non-writable property", function () {
+		expect(translation, translation).to.match(/Cannot\ modify\ non\-writable\ property/g);
 	});
 });
 describe("translating pt-PT string: Não é possível alterar a propriedade: 'length' não é gravável", function () {
@@ -2811,8 +2811,8 @@ describe("translating pt-PT string: Não é possível alterar a propriedade: 'le
 		});
 	});
 
-	it("should return the english version: Cannot modify property: 'length' is not writable", function () {
-		expect(translation, translation).to.equal("Cannot modify property: 'length' is not writable");
+	it("should return one of the english versions: Cannot modify property: 'length' is not writable", function () {
+		expect(translation, translation).to.match(/Cannot\ modify\ property\:\ \'length\'\ is\ not\ writable/g);
 	});
 });
 describe("translating pt-PT string: Não é possível definir a propriedade", function () {
@@ -2827,8 +2827,8 @@ describe("translating pt-PT string: Não é possível definir a propriedade", fu
 		});
 	});
 
-	it("should return the english version: Cannot define property", function () {
-		expect(translation, translation).to.equal("Cannot define property");
+	it("should return one of the english versions: Cannot define property", function () {
+		expect(translation, translation).to.match(/Cannot\ define\ property/g);
 	});
 });
 describe("translating pt-PT string: O argumento de construtor da matriz escrita é inválido", function () {
@@ -2843,8 +2843,8 @@ describe("translating pt-PT string: O argumento de construtor da matriz escrita 
 		});
 	});
 
-	it("should return the english version: Typed array constructor argument is invalid", function () {
-		expect(translation, translation).to.equal("Typed array constructor argument is invalid");
+	it("should return one of the english versions: Typed array constructor argument is invalid", function () {
+		expect(translation, translation).to.match(/Typed\ array\ constructor\ argument\ is\ invalid/g);
 	});
 });
 describe("translating pt-PT string: 'this' não é um objeto da matriz escrita", function () {
@@ -2859,8 +2859,8 @@ describe("translating pt-PT string: 'this' não é um objeto da matriz escrita",
 		});
 	});
 
-	it("should return the english version: 'this' is not a typed array object", function () {
-		expect(translation, translation).to.equal("'this' is not a typed array object");
+	it("should return one of the english versions: 'this' is not a typed array object", function () {
+		expect(translation, translation).to.match(/\'this\'\ is\ not\ a\ typed\ array\ object/g);
 	});
 });
 describe("translating pt-PT string: Desvio/comprimento inválido ao criar a matriz escrita", function () {
@@ -2875,8 +2875,8 @@ describe("translating pt-PT string: Desvio/comprimento inválido ao criar a matr
 		});
 	});
 
-	it("should return the english version: Invalid offset/length when creating typed array", function () {
-		expect(translation, translation).to.equal("Invalid offset/length when creating typed array");
+	it("should return one of the english versions: Invalid offset/length when creating typed array", function () {
+		expect(translation, translation).to.match(/Invalid\ offset\/length\ when\ creating\ typed\ array/g);
 	});
 });
 describe("translating pt-PT string: Valor de início/fim inválido no método de submatriz da matriz escrita", function () {
@@ -2891,8 +2891,8 @@ describe("translating pt-PT string: Valor de início/fim inválido no método de
 		});
 	});
 
-	it("should return the english version: Invalid begin/end value in typed array subarray method", function () {
-		expect(translation, translation).to.equal("Invalid begin/end value in typed array subarray method");
+	it("should return one of the english versions: Invalid begin/end value in typed array subarray method", function () {
+		expect(translation, translation).to.match(/Invalid\ begin\/end\ value\ in\ typed\ array\ subarray\ method/g);
 	});
 });
 describe("translating pt-PT string: Origem inválida no conjunto da matriz escrita", function () {
@@ -2907,8 +2907,8 @@ describe("translating pt-PT string: Origem inválida no conjunto da matriz escri
 		});
 	});
 
-	it("should return the english version: Invalid source in typed array set", function () {
-		expect(translation, translation).to.equal("Invalid source in typed array set");
+	it("should return one of the english versions: Invalid source in typed array set", function () {
+		expect(translation, translation).to.match(/Invalid\ source\ in\ typed\ array\ set/g);
 	});
 });
 describe("translating pt-PT string: 'this' não é um objeto DataView", function () {
@@ -2923,8 +2923,8 @@ describe("translating pt-PT string: 'this' não é um objeto DataView", function
 		});
 	});
 
-	it("should return the english version: 'this' is not a DataView object", function () {
-		expect(translation, translation).to.equal("'this' is not a DataView object");
+	it("should return one of the english versions: 'this' is not a DataView object", function () {
+		expect(translation, translation).to.match(/\'this\'\ is\ not\ a\ DataView\ object/g);
 	});
 });
 describe("translating pt-PT string: Argumentos inválidos em DataView", function () {
@@ -2939,8 +2939,8 @@ describe("translating pt-PT string: Argumentos inválidos em DataView", function
 		});
 	});
 
-	it("should return the english version: Invalid arguments in DataView", function () {
-		expect(translation, translation).to.equal("Invalid arguments in DataView");
+	it("should return one of the english versions: Invalid arguments in DataView or Invalid arguments in DataView", function () {
+		expect(translation, translation).to.match(/Invalid\ arguments\ in\ DataView|Invalid\ arguments\ in\ DataView/g);
 	});
 });
 describe("translating pt-PT string: Acesso da operação DataView para lá do tamanho da memória intermédia especificado", function () {
@@ -2955,8 +2955,8 @@ describe("translating pt-PT string: Acesso da operação DataView para lá do ta
 		});
 	});
 
-	it("should return the english version: DataView operation access beyond specified buffer length", function () {
-		expect(translation, translation).to.equal("DataView operation access beyond specified buffer length");
+	it("should return one of the english versions: DataView operation access beyond specified buffer length", function () {
+		expect(translation, translation).to.match(/DataView\ operation\ access\ beyond\ specified\ buffer\ length/g);
 	});
 });
 describe("translating pt-PT string: Argumentos inválidos em DataView", function () {
@@ -2971,8 +2971,8 @@ describe("translating pt-PT string: Argumentos inválidos em DataView", function
 		});
 	});
 
-	it("should return the english version: Invalid arguments in DataView", function () {
-		expect(translation, translation).to.equal("Invalid arguments in DataView");
+	it("should return one of the english versions: Invalid arguments in DataView or Invalid arguments in DataView", function () {
+		expect(translation, translation).to.match(/Invalid\ arguments\ in\ DataView|Invalid\ arguments\ in\ DataView/g);
 	});
 });
 describe("translating pt-PT string: assinatura de função inválida", function () {
@@ -2987,8 +2987,8 @@ describe("translating pt-PT string: assinatura de função inválida", function 
 		});
 	});
 
-	it("should return the english version: invalid function signature", function () {
-		expect(translation, translation).to.equal("invalid function signature");
+	it("should return one of the english versions: invalid function signature", function () {
+		expect(translation, translation).to.match(/invalid\ function\ signature/g);
 	});
 });
 describe("translating pt-PT string: assinatura de propriedade inválida", function () {
@@ -3003,8 +3003,8 @@ describe("translating pt-PT string: assinatura de propriedade inválida", functi
 		});
 	});
 
-	it("should return the english version: invalid property signature", function () {
-		expect(translation, translation).to.equal("invalid property signature");
+	it("should return one of the english versions: invalid property signature", function () {
+		expect(translation, translation).to.match(/invalid\ property\ signature/g);
 	});
 });
 describe("translating pt-PT string: tipo de parâmetro de entrada inválido", function () {
@@ -3019,8 +3019,8 @@ describe("translating pt-PT string: tipo de parâmetro de entrada inválido", fu
 		});
 	});
 
-	it("should return the english version: invalid input parameter type", function () {
-		expect(translation, translation).to.equal("invalid input parameter type");
+	it("should return one of the english versions: invalid input parameter type", function () {
+		expect(translation, translation).to.match(/invalid\ input\ parameter\ type/g);
 	});
 });
 describe("translating pt-PT string: parâmetro de saída inválido", function () {
@@ -3035,8 +3035,8 @@ describe("translating pt-PT string: parâmetro de saída inválido", function ()
 		});
 	});
 
-	it("should return the english version: invalid ouput parameter", function () {
-		expect(translation, translation).to.equal("invalid ouput parameter");
+	it("should return one of the english versions: invalid ouput parameter", function () {
+		expect(translation, translation).to.match(/invalid\ ouput\ parameter/g);
 	});
 });
 describe("translating pt-PT string: O acesso à propriedade 'arguments' de uma função não é permitido no modo restrito", function () {
@@ -3051,8 +3051,8 @@ describe("translating pt-PT string: O acesso à propriedade 'arguments' de uma f
 		});
 	});
 
-	it("should return the english version: Accessing the 'arguments' property of a function is not allowed in strict mode", function () {
-		expect(translation, translation).to.equal("Accessing the 'arguments' property of a function is not allowed in strict mode");
+	it("should return one of the english versions: Accessing the 'arguments' property of a function is not allowed in strict mode", function () {
+		expect(translation, translation).to.match(/Accessing\ the\ \'arguments\'\ property\ of\ a\ function\ is\ not\ allowed\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: Objeto Passível de Inspeção esperado", function () {
@@ -3067,8 +3067,8 @@ describe("translating pt-PT string: Objeto Passível de Inspeção esperado", fu
 		});
 	});
 
-	it("should return the english version: Inspectable Object expected", function () {
-		expect(translation, translation).to.equal("Inspectable Object expected");
+	it("should return one of the english versions: Inspectable Object expected", function () {
+		expect(translation, translation).to.match(/Inspectable\ Object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Não foi possível converter o argumento no tipo 'char'", function () {
@@ -3083,8 +3083,8 @@ describe("translating pt-PT string: Não foi possível converter o argumento no 
 		});
 	});
 
-	it("should return the english version: Could not convert argument to type 'char'", function () {
-		expect(translation, translation).to.equal("Could not convert argument to type 'char'");
+	it("should return one of the english versions: Could not convert argument to type 'char'", function () {
+		expect(translation, translation).to.match(/Could\ not\ convert\ argument\ to\ type\ \'char\'/g);
 	});
 });
 describe("translating pt-PT string: Não foi possível converter o argumento no tipo 'GUID'", function () {
@@ -3099,8 +3099,8 @@ describe("translating pt-PT string: Não foi possível converter o argumento no 
 		});
 	});
 
-	it("should return the english version: Could not convert argument to type 'GUID'", function () {
-		expect(translation, translation).to.equal("Could not convert argument to type 'GUID'");
+	it("should return one of the english versions: Could not convert argument to type 'GUID'", function () {
+		expect(translation, translation).to.match(/Could\ not\ convert\ argument\ to\ type\ \'GUID\'/g);
 	});
 });
 describe("translating pt-PT string: Era esperado IInspectable", function () {
@@ -3115,8 +3115,8 @@ describe("translating pt-PT string: Era esperado IInspectable", function () {
 		});
 	});
 
-	it("should return the english version: IInspectable expected", function () {
-		expect(translation, translation).to.equal("IInspectable expected");
+	it("should return one of the english versions: IInspectable expected", function () {
+		expect(translation, translation).to.match(/IInspectable\ expected/g);
 	});
 });
 describe("translating pt-PT string: Não foi possível converter o objeto em estrutura: falta uma propriedade esperada no objeto", function () {
@@ -3131,8 +3131,8 @@ describe("translating pt-PT string: Não foi possível converter o objeto em est
 		});
 	});
 
-	it("should return the english version: Could not convert object to struct: object missing expected property", function () {
-		expect(translation, translation).to.equal("Could not convert object to struct: object missing expected property");
+	it("should return one of the english versions: Could not convert object to struct: object missing expected property", function () {
+		expect(translation, translation).to.match(/Could\ not\ convert\ object\ to\ struct\:\ object\ missing\ expected\ property/g);
 	});
 });
 describe("translating pt-PT string: Tipo desconhecido", function () {
@@ -3147,8 +3147,8 @@ describe("translating pt-PT string: Tipo desconhecido", function () {
 		});
 	});
 
-	it("should return the english version: Unknown type", function () {
-		expect(translation, translation).to.equal("Unknown type");
+	it("should return one of the english versions: Unknown type", function () {
+		expect(translation, translation).to.match(/Unknown\ type/g);
 	});
 });
 describe("translating pt-PT string: Função chamada com argumentos insuficientes", function () {
@@ -3163,8 +3163,8 @@ describe("translating pt-PT string: Função chamada com argumentos insuficiente
 		});
 	});
 
-	it("should return the english version: Function called with too few arguments", function () {
-		expect(translation, translation).to.equal("Function called with too few arguments");
+	it("should return one of the english versions: Function called with too few arguments", function () {
+		expect(translation, translation).to.match(/Function\ called\ with\ too\ few\ arguments/g);
 	});
 });
 describe("translating pt-PT string: O tipo não é estruturável", function () {
@@ -3179,8 +3179,8 @@ describe("translating pt-PT string: O tipo não é estruturável", function () {
 		});
 	});
 
-	it("should return the english version: Type is not constructible", function () {
-		expect(translation, translation).to.equal("Type is not constructible");
+	it("should return one of the english versions: Type is not constructible", function () {
+		expect(translation, translation).to.match(/Type\ is\ not\ constructible/g);
 	});
 });
 describe("translating pt-PT string: Não foi possível converter o valor em PropertyValue: tipo não suportado por PropertyValue", function () {
@@ -3195,8 +3195,8 @@ describe("translating pt-PT string: Não foi possível converter o valor em Prop
 		});
 	});
 
-	it("should return the english version: Could not convert value to PropertyValue: Type not supported by PropertyValue", function () {
-		expect(translation, translation).to.equal("Could not convert value to PropertyValue: Type not supported by PropertyValue");
+	it("should return one of the english versions: Could not convert value to PropertyValue: Type not supported by PropertyValue", function () {
+		expect(translation, translation).to.match(/Could\ not\ convert\ value\ to\ PropertyValue\:\ Type\ not\ supported\ by\ PropertyValue/g);
 	});
 });
 describe("translating pt-PT string: Não foi possível converter o valor em IInspectable: tipo não suportado por IInspectable", function () {
@@ -3211,8 +3211,8 @@ describe("translating pt-PT string: Não foi possível converter o valor em IIns
 		});
 	});
 
-	it("should return the english version: Could not convert value to IInspectable: Type not supported by IInspectable", function () {
-		expect(translation, translation).to.equal("Could not convert value to IInspectable: Type not supported by IInspectable");
+	it("should return one of the english versions: Could not convert value to IInspectable: Type not supported by IInspectable", function () {
+		expect(translation, translation).to.match(/Could\ not\ convert\ value\ to\ IInspectable\:\ Type\ not\ supported\ by\ IInspectable/g);
 	});
 });
 describe("translating pt-PT string: Não foi possível converter Date em Windows.Foundation.DateTime: valor fora do intervalo válido", function () {
@@ -3227,8 +3227,8 @@ describe("translating pt-PT string: Não foi possível converter Date em Windows
 		});
 	});
 
-	it("should return the english version: Could not convert Date to Windows.Foundation.DateTime: value outside of valid range", function () {
-		expect(translation, translation).to.equal("Could not convert Date to Windows.Foundation.DateTime: value outside of valid range");
+	it("should return one of the english versions: Could not convert Date to Windows.Foundation.DateTime: value outside of valid range", function () {
+		expect(translation, translation).to.match(/Could\ not\ convert\ Date\ to\ Windows\.Foundation\.DateTime\:\ value\ outside\ of\ valid\ range/g);
 	});
 });
 describe("translating pt-PT string: Não foi possível converter o valor em Windows.Foundation.TimeSpan: valor fora do intervalo válido", function () {
@@ -3243,8 +3243,8 @@ describe("translating pt-PT string: Não foi possível converter o valor em Wind
 		});
 	});
 
-	it("should return the english version: Could not convert value to Windows.Foundation.TimeSpan: value outside of valid range", function () {
-		expect(translation, translation).to.equal("Could not convert value to Windows.Foundation.TimeSpan: value outside of valid range");
+	it("should return one of the english versions: Could not convert value to Windows.Foundation.TimeSpan: value outside of valid range", function () {
+		expect(translation, translation).to.match(/Could\ not\ convert\ value\ to\ Windows\.Foundation\.TimeSpan\:\ value\ outside\ of\ valid\ range/g);
 	});
 });
 describe("translating pt-PT string: Acesso inválido ao Objeto Passível de Inspeção já libertado", function () {
@@ -3259,8 +3259,8 @@ describe("translating pt-PT string: Acesso inválido ao Objeto Passível de Insp
 		});
 	});
 
-	it("should return the english version: Invalid access to already released Inspectable Object", function () {
-		expect(translation, translation).to.equal("Invalid access to already released Inspectable Object");
+	it("should return one of the english versions: Invalid access to already released Inspectable Object", function () {
+		expect(translation, translation).to.match(/Invalid\ access\ to\ already\ released\ Inspectable\ Object/g);
 	});
 });
 describe("translating pt-PT string: Não é possível libertar o Objeto Passível de Inspeção já libertado", function () {
@@ -3275,8 +3275,8 @@ describe("translating pt-PT string: Não é possível libertar o Objeto Passíve
 		});
 	});
 
-	it("should return the english version: Cannot release already released Inspectable Object", function () {
-		expect(translation, translation).to.equal("Cannot release already released Inspectable Object");
+	it("should return one of the english versions: Cannot release already released Inspectable Object", function () {
+		expect(translation, translation).to.match(/Cannot\ release\ already\ released\ Inspectable\ Object/g);
 	});
 });
 describe("translating pt-PT string: 'this' não tem o tipo esperado", function () {
@@ -3291,8 +3291,8 @@ describe("translating pt-PT string: 'this' não tem o tipo esperado", function (
 		});
 	});
 
-	it("should return the english version: 'this' is not of the expected type", function () {
-		expect(translation, translation).to.equal("'this' is not of the expected type");
+	it("should return one of the english versions: 'this' is not of the expected type", function () {
+		expect(translation, translation).to.match(/\'this\'\ is\ not\ of\ the\ expected\ type/g);
 	});
 });
 describe("translating pt-PT string: Comprimento e tamanho inválidos especificados para a matriz", function () {
@@ -3307,8 +3307,8 @@ describe("translating pt-PT string: Comprimento e tamanho inválidos especificad
 		});
 	});
 
-	it("should return the english version: Illegal length and size specified for the array", function () {
-		expect(translation, translation).to.equal("Illegal length and size specified for the array");
+	it("should return one of the english versions: Illegal length and size specified for the array", function () {
+		expect(translation, translation).to.match(/Illegal\ length\ and\ size\ specified\ for\ the\ array/g);
 	});
 });
 describe("translating pt-PT string: Ocorreu uma falha inesperada ao tentar obter informações de metadados", function () {
@@ -3323,8 +3323,8 @@ describe("translating pt-PT string: Ocorreu uma falha inesperada ao tentar obter
 		});
 	});
 
-	it("should return the english version: An unexpected failure occurred while trying to obtain metadata information", function () {
-		expect(translation, translation).to.equal("An unexpected failure occurred while trying to obtain metadata information");
+	it("should return one of the english versions: An unexpected failure occurred while trying to obtain metadata information", function () {
+		expect(translation, translation).to.match(/An\ unexpected\ failure\ occurred\ while\ trying\ to\ obtain\ metadata\ information/g);
 	});
 });
 describe("translating pt-PT string: O estado é 'erro', mas getResults não devolveu um erro", function () {
@@ -3339,8 +3339,8 @@ describe("translating pt-PT string: O estado é 'erro', mas getResults não devo
 		});
 	});
 
-	it("should return the english version: Status is 'error', but getResults did not return an error", function () {
-		expect(translation, translation).to.equal("Status is 'error', but getResults did not return an error");
+	it("should return one of the english versions: Status is 'error', but getResults did not return an error", function () {
+		expect(translation, translation).to.match(/Status\ is\ \'error\'\,\ but\ getResults\ did\ not\ return\ an\ error/g);
 	});
 });
 describe("translating pt-PT string: Um parâmetro de estado inválido ou em falta foi transmitido a um processador concluído", function () {
@@ -3355,8 +3355,8 @@ describe("translating pt-PT string: Um parâmetro de estado inválido ou em falt
 		});
 	});
 
-	it("should return the english version: Missing or invalid status parameter passed to completed handler", function () {
-		expect(translation, translation).to.equal("Missing or invalid status parameter passed to completed handler");
+	it("should return one of the english versions: Missing or invalid status parameter passed to completed handler", function () {
+		expect(translation, translation).to.match(/Missing\ or\ invalid\ status\ parameter\ passed\ to\ completed\ handler/g);
 	});
 });
 describe("translating pt-PT string: Um parâmetro de emissor inválido ou em falta foi transmitido a um processador concluído", function () {
@@ -3371,8 +3371,8 @@ describe("translating pt-PT string: Um parâmetro de emissor inválido ou em fal
 		});
 	});
 
-	it("should return the english version: Missing or invalid sender parameter passed to completed handler", function () {
-		expect(translation, translation).to.equal("Missing or invalid sender parameter passed to completed handler");
+	it("should return one of the english versions: Missing or invalid sender parameter passed to completed handler", function () {
+		expect(translation, translation).to.match(/Missing\ or\ invalid\ sender\ parameter\ passed\ to\ completed\ handler/g);
 	});
 });
 describe("translating pt-PT string: Infinito", function () {
@@ -3387,8 +3387,8 @@ describe("translating pt-PT string: Infinito", function () {
 		});
 	});
 
-	it("should return the english version: Infinity", function () {
-		expect(translation, translation).to.equal("Infinity");
+	it("should return one of the english versions: Infinity", function () {
+		expect(translation, translation).to.match(/Infinity/g);
 	});
 });
 describe("translating pt-PT string: -Infinito", function () {
@@ -3403,8 +3403,8 @@ describe("translating pt-PT string: -Infinito", function () {
 		});
 	});
 
-	it("should return the english version: -Infinity", function () {
-		expect(translation, translation).to.equal("-Infinity");
+	it("should return one of the english versions: -Infinity", function () {
+		expect(translation, translation).to.match(/\-Infinity/g);
 	});
 });
 describe("translating pt-PT string: O objeto não suporta a propriedade nem o método 'MyDynamicTestString'", function () {
@@ -3419,8 +3419,8 @@ describe("translating pt-PT string: O objeto não suporta a propriedade nem o m�
 		});
 	});
 
-	it("should return the english version: Object doesn't support property or method 'MyDynamicTestString'", function () {
-		expect(translation, translation).to.equal("Object doesn't support property or method 'MyDynamicTestString'");
+	it("should return one of the english versions: Object doesn't support property or method 'MyDynamicTestString'", function () {
+		expect(translation, translation).to.match(/Object\ doesn\'t\ support\ property\ or\ method\ \'MyDynamicTestString\'/g);
 	});
 });
 describe("translating pt-PT string: O argumento da função 'MyDynamicTestString' não é opcional", function () {
@@ -3435,8 +3435,8 @@ describe("translating pt-PT string: O argumento da função 'MyDynamicTestString
 		});
 	});
 
-	it("should return the english version: Argument to the function 'MyDynamicTestString' is not optional", function () {
-		expect(translation, translation).to.equal("Argument to the function 'MyDynamicTestString' is not optional");
+	it("should return one of the english versions: Argument to the function 'MyDynamicTestString' is not optional", function () {
+		expect(translation, translation).to.match(/Argument\ to\ the\ function\ \'MyDynamicTestString\'\ is\ not\ optional/g);
 	});
 });
 describe("translating pt-PT string: 'MyDynamicTestString' não é um número", function () {
@@ -3451,8 +3451,8 @@ describe("translating pt-PT string: 'MyDynamicTestString' não é um número", f
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' is not a number", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' is not a number");
+	it("should return one of the english versions: 'MyDynamicTestString' is not a number", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ is\ not\ a\ number/g);
 	});
 });
 describe("translating pt-PT string: 'MyDynamicTestString' não é uma função", function () {
@@ -3467,8 +3467,8 @@ describe("translating pt-PT string: 'MyDynamicTestString' não é uma função",
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' is not a function", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' is not a function");
+	it("should return one of the english versions: 'MyDynamicTestString' is not a function", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ is\ not\ a\ function/g);
 	});
 });
 describe("translating pt-PT string: 'MyDynamicTestString' não é um objeto indexável", function () {
@@ -3483,8 +3483,8 @@ describe("translating pt-PT string: 'MyDynamicTestString' não é um objeto inde
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' is not an indexable object", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' is not an indexable object");
+	it("should return one of the english versions: 'MyDynamicTestString' is not an indexable object", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ is\ not\ an\ indexable\ object/g);
 	});
 });
 describe("translating pt-PT string: 'MyDynamicTestString' não é uma cadeia", function () {
@@ -3499,8 +3499,8 @@ describe("translating pt-PT string: 'MyDynamicTestString' não é uma cadeia", f
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' is not a string", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' is not a string");
+	it("should return one of the english versions: 'MyDynamicTestString' is not a string", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ is\ not\ a\ string/g);
 	});
 });
 describe("translating pt-PT string: 'MyDynamicTestString' não é um objeto Date", function () {
@@ -3515,8 +3515,8 @@ describe("translating pt-PT string: 'MyDynamicTestString' não é um objeto Date
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' is not a date object", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' is not a date object");
+	it("should return one of the english versions: 'MyDynamicTestString' is not a date object", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ is\ not\ a\ date\ object/g);
 	});
 });
 describe("translating pt-PT string: 'MyDynamicTestString' é nulo ou não é um objeto", function () {
@@ -3531,8 +3531,8 @@ describe("translating pt-PT string: 'MyDynamicTestString' é nulo ou não é um 
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' is null or not an object", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' is null or not an object");
+	it("should return one of the english versions: 'MyDynamicTestString' is null or not an object", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ is\ null\ or\ not\ an\ object/g);
 	});
 });
 describe("translating pt-PT string: Não é possível atribuir a 'MyDynamicTestString'", function () {
@@ -3547,8 +3547,8 @@ describe("translating pt-PT string: Não é possível atribuir a 'MyDynamicTestS
 		});
 	});
 
-	it("should return the english version: Cannot assign to 'MyDynamicTestString'", function () {
-		expect(translation, translation).to.equal("Cannot assign to 'MyDynamicTestString'");
+	it("should return one of the english versions: Cannot assign to 'MyDynamicTestString'", function () {
+		expect(translation, translation).to.match(/Cannot\ assign\ to\ \'MyDynamicTestString\'/g);
 	});
 });
 describe("translating pt-PT string: 'MyDynamicTestString' não está definido", function () {
@@ -3563,8 +3563,8 @@ describe("translating pt-PT string: 'MyDynamicTestString' não está definido", 
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' is undefined", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' is undefined");
+	it("should return one of the english versions: 'MyDynamicTestString' is undefined", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ is\ undefined/g);
 	});
 });
 describe("translating pt-PT string: 'MyDynamicTestString' não é um booleano", function () {
@@ -3579,8 +3579,8 @@ describe("translating pt-PT string: 'MyDynamicTestString' não é um booleano", 
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' is not a boolean", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' is not a boolean");
+	it("should return one of the english versions: 'MyDynamicTestString' is not a boolean", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ is\ not\ a\ boolean/g);
 	});
 });
 describe("translating pt-PT string: Não é possível eliminar 'MyDynamicTestString'", function () {
@@ -3595,8 +3595,8 @@ describe("translating pt-PT string: Não é possível eliminar 'MyDynamicTestStr
 		});
 	});
 
-	it("should return the english version: Cannot delete 'MyDynamicTestString'", function () {
-		expect(translation, translation).to.equal("Cannot delete 'MyDynamicTestString'");
+	it("should return one of the english versions: Cannot delete 'MyDynamicTestString'", function () {
+		expect(translation, translation).to.match(/Cannot\ delete\ \'MyDynamicTestString\'/g);
 	});
 });
 describe("translating pt-PT string: 'MyDynamicTestString' não é um VBArray", function () {
@@ -3611,8 +3611,8 @@ describe("translating pt-PT string: 'MyDynamicTestString' não é um VBArray", f
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' is not a VBArray", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' is not a VBArray");
+	it("should return one of the english versions: 'MyDynamicTestString' is not a VBArray", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ is\ not\ a\ VBArray/g);
 	});
 });
 describe("translating pt-PT string: 'MyDynamicTestString' não é um objeto JavaScript", function () {
@@ -3627,8 +3627,8 @@ describe("translating pt-PT string: 'MyDynamicTestString' não é um objeto Java
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' is not a JavaScript object", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' is not a JavaScript object");
+	it("should return one of the english versions: 'MyDynamicTestString' is not a JavaScript object", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ is\ not\ a\ JavaScript\ object/g);
 	});
 });
 describe("translating pt-PT string: 'MyDynamicTestString' não é um objeto Enumerator", function () {
@@ -3643,8 +3643,8 @@ describe("translating pt-PT string: 'MyDynamicTestString' não é um objeto Enum
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' is not an enumerator object", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' is not an enumerator object");
+	it("should return one of the english versions: 'MyDynamicTestString' is not an enumerator object", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ is\ not\ an\ enumerator\ object/g);
 	});
 });
 describe("translating pt-PT string: 'MyDynamicTestString' não é um objeto Regular Expression", function () {
@@ -3659,8 +3659,8 @@ describe("translating pt-PT string: 'MyDynamicTestString' não é um objeto Regu
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' is not a regular expression object", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' is not a regular expression object");
+	it("should return one of the english versions: 'MyDynamicTestString' is not a regular expression object", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ is\ not\ a\ regular\ expression\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString não é um objeto 'Array' ou 'arguments'", function () {
@@ -3675,8 +3675,8 @@ describe("translating pt-PT string: MyDynamicTestString não é um objeto 'Array
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString is not an Array or arguments object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString is not an Array or arguments object");
+	it("should return one of the english versions: MyDynamicTestString is not an Array or arguments object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\ is\ not\ an\ Array\ or\ arguments\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString não é um objeto 'Array'", function () {
@@ -3691,8 +3691,8 @@ describe("translating pt-PT string: MyDynamicTestString não é um objeto 'Array
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString is not an Array object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString is not an Array object");
+	it("should return one of the english versions: MyDynamicTestString is not an Array object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\ is\ not\ an\ Array\ object/g);
 	});
 });
 describe("translating pt-PT string: Não é possível definir o atributo 'MyDynamicTestString' do descritor de propriedades como 'true' neste objeto", function () {
@@ -3707,8 +3707,8 @@ describe("translating pt-PT string: Não é possível definir o atributo 'MyDyna
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' attribute on the property descriptor cannot be set to 'true' on this object", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' attribute on the property descriptor cannot be set to 'true' on this object");
+	it("should return one of the english versions: 'MyDynamicTestString' attribute on the property descriptor cannot be set to 'true' on this object", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ attribute\ on\ the\ property\ descriptor\ cannot\ be\ set\ to\ \'true\'\ on\ this\ object/g);
 	});
 });
 describe("translating pt-PT string: Não é possível definir o atributo 'MyDynamicTestString' do descritor de propriedades como 'false' neste objeto", function () {
@@ -3723,8 +3723,8 @@ describe("translating pt-PT string: Não é possível definir o atributo 'MyDyna
 		});
 	});
 
-	it("should return the english version: 'MyDynamicTestString' attribute on the property descriptor cannot be set to 'false' on this object", function () {
-		expect(translation, translation).to.equal("'MyDynamicTestString' attribute on the property descriptor cannot be set to 'false' on this object");
+	it("should return one of the english versions: 'MyDynamicTestString' attribute on the property descriptor cannot be set to 'false' on this object", function () {
+		expect(translation, translation).to.match(/\'MyDynamicTestString\'\ attribute\ on\ the\ property\ descriptor\ cannot\ be\ set\ to\ \'false\'\ on\ this\ object/g);
 	});
 });
 describe("translating pt-PT string: Nova declaração de const 'MyDynamicTestString'", function () {
@@ -3739,8 +3739,8 @@ describe("translating pt-PT string: Nova declaração de const 'MyDynamicTestStr
 		});
 	});
 
-	it("should return the english version: Redeclaration of const 'MyDynamicTestString'", function () {
-		expect(translation, translation).to.equal("Redeclaration of const 'MyDynamicTestString'");
+	it("should return one of the english versions: Redeclaration of const 'MyDynamicTestString'", function () {
+		expect(translation, translation).to.match(/Redeclaration\ of\ const\ \'MyDynamicTestString\'/g);
 	});
 });
 describe("translating pt-PT string: Chamada de eliminação para 'MyDynamicTestString' não permitida no modo estrito", function () {
@@ -3755,8 +3755,8 @@ describe("translating pt-PT string: Chamada de eliminação para 'MyDynamicTestS
 		});
 	});
 
-	it("should return the english version: Calling delete on 'MyDynamicTestString' is not allowed in strict mode", function () {
-		expect(translation, translation).to.equal("Calling delete on 'MyDynamicTestString' is not allowed in strict mode");
+	it("should return one of the english versions: Calling delete on 'MyDynamicTestString' is not allowed in strict mode", function () {
+		expect(translation, translation).to.match(/Calling\ delete\ on\ \'MyDynamicTestString\'\ is\ not\ allowed\ in\ strict\ mode/g);
 	});
 });
 describe("translating pt-PT string: Não é possível definir a propriedade 'MyDynamicTestString' de uma referência não definida ou nula", function () {
@@ -3771,8 +3771,8 @@ describe("translating pt-PT string: Não é possível definir a propriedade 'MyD
 		});
 	});
 
-	it("should return the english version: Unable to set property 'MyDynamicTestString' of undefined or null reference", function () {
-		expect(translation, translation).to.equal("Unable to set property 'MyDynamicTestString' of undefined or null reference");
+	it("should return one of the english versions: Unable to set property 'MyDynamicTestString' of undefined or null reference", function () {
+		expect(translation, translation).to.match(/Unable\ to\ set\ property\ \'MyDynamicTestString\'\ of\ undefined\ or\ null\ reference/g);
 	});
 });
 describe("translating pt-PT string: Não é possível obter a propriedade 'MyDynamicTestString' de uma referência não definida ou nula", function () {
@@ -3787,8 +3787,8 @@ describe("translating pt-PT string: Não é possível obter a propriedade 'MyDyn
 		});
 	});
 
-	it("should return the english version: Unable to get property 'MyDynamicTestString' of undefined or null reference", function () {
-		expect(translation, translation).to.equal("Unable to get property 'MyDynamicTestString' of undefined or null reference");
+	it("should return one of the english versions: Unable to get property 'MyDynamicTestString' of undefined or null reference", function () {
+		expect(translation, translation).to.match(/Unable\ to\ get\ property\ \'MyDynamicTestString\'\ of\ undefined\ or\ null\ reference/g);
 	});
 });
 describe("translating pt-PT string: Não é possível eliminar a propriedade 'MyDynamicTestString' de uma referência não definida ou nula", function () {
@@ -3803,8 +3803,8 @@ describe("translating pt-PT string: Não é possível eliminar a propriedade 'My
 		});
 	});
 
-	it("should return the english version: Unable to delete property 'MyDynamicTestString' of undefined or null reference", function () {
-		expect(translation, translation).to.equal("Unable to delete property 'MyDynamicTestString' of undefined or null reference");
+	it("should return one of the english versions: Unable to delete property 'MyDynamicTestString' of undefined or null reference", function () {
+		expect(translation, translation).to.match(/Unable\ to\ delete\ property\ \'MyDynamicTestString\'\ of\ undefined\ or\ null\ reference/g);
 	});
 });
 describe("translating pt-PT string: Não é possível aceder à propriedade 'MyDynamicTestString': o tipo 'VarDate' não suporta propriedades definidas pelo utilizador", function () {
@@ -3819,8 +3819,8 @@ describe("translating pt-PT string: Não é possível aceder à propriedade 'MyD
 		});
 	});
 
-	it("should return the english version: Unable to access property 'MyDynamicTestString': type 'VarDate' does not support user-defined properties", function () {
-		expect(translation, translation).to.equal("Unable to access property 'MyDynamicTestString': type 'VarDate' does not support user-defined properties");
+	it("should return one of the english versions: Unable to access property 'MyDynamicTestString': type 'VarDate' does not support user-defined properties", function () {
+		expect(translation, translation).to.match(/Unable\ to\ access\ property\ \'MyDynamicTestString\'\:\ type\ \'VarDate\'\ does\ not\ support\ user\-defined\ properties/g);
 	});
 });
 describe("translating pt-PT string: O valor da propriedade 'MyDynamicTestString' não é um objeto de Função", function () {
@@ -3835,8 +3835,8 @@ describe("translating pt-PT string: O valor da propriedade 'MyDynamicTestString'
 		});
 	});
 
-	it("should return the english version: The value of the property 'MyDynamicTestString' is not a Function object", function () {
-		expect(translation, translation).to.equal("The value of the property 'MyDynamicTestString' is not a Function object");
+	it("should return one of the english versions: The value of the property 'MyDynamicTestString' is not a Function object", function () {
+		expect(translation, translation).to.match(/The\ value\ of\ the\ property\ \'MyDynamicTestString\'\ is\ not\ a\ Function\ object/g);
 	});
 });
 describe("translating pt-PT string: O valor da propriedade 'MyDynamicTestString' é nulo ou não definido, não um objeto de Função", function () {
@@ -3851,8 +3851,8 @@ describe("translating pt-PT string: O valor da propriedade 'MyDynamicTestString'
 		});
 	});
 
-	it("should return the english version: The value of the property 'MyDynamicTestString' is null or undefined, not a Function object", function () {
-		expect(translation, translation).to.equal("The value of the property 'MyDynamicTestString' is null or undefined, not a Function object");
+	it("should return one of the english versions: The value of the property 'MyDynamicTestString' is null or undefined, not a Function object", function () {
+		expect(translation, translation).to.match(/The\ value\ of\ the\ property\ \'MyDynamicTestString\'\ is\ null\ or\ undefined\,\ not\ a\ Function\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: 'this' é nulo ou não definido", function () {
@@ -3867,8 +3867,8 @@ describe("translating pt-PT string: MyDynamicTestString: 'this' é nulo ou não 
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: 'this' is null or undefined", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: 'this' is null or undefined");
+	it("should return one of the english versions: MyDynamicTestString: 'this' is null or undefined", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ \'this\'\ is\ null\ or\ undefined/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: 'this' não é um Objeto", function () {
@@ -3883,8 +3883,8 @@ describe("translating pt-PT string: MyDynamicTestString: 'this' não é um Objet
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: 'this' is not an Object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: 'this' is not an Object");
+	it("should return one of the english versions: MyDynamicTestString: 'this' is not an Object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ \'this\'\ is\ not\ an\ Object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objeto de Função", function () {
@@ -3899,8 +3899,8 @@ describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objet
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: 'this' is not a Function object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: 'this' is not a Function object");
+	it("should return one of the english versions: MyDynamicTestString: 'this' is not a Function object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ \'this\'\ is\ not\ a\ Function\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objeto de Cadeia", function () {
@@ -3915,8 +3915,8 @@ describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objet
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: 'this' is not a String object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: 'this' is not a String object");
+	it("should return one of the english versions: MyDynamicTestString: 'this' is not a String object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ \'this\'\ is\ not\ a\ String\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objeto Booleano", function () {
@@ -3931,8 +3931,8 @@ describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objet
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: 'this' is not a Boolean object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: 'this' is not a Boolean object");
+	it("should return one of the english versions: MyDynamicTestString: 'this' is not a Boolean object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ \'this\'\ is\ not\ a\ Boolean\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objeto de Data", function () {
@@ -3947,8 +3947,8 @@ describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objet
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: 'this' is not a Date object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: 'this' is not a Date object");
+	it("should return one of the english versions: MyDynamicTestString: 'this' is not a Date object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ \'this\'\ is\ not\ a\ Date\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objeto de Número", function () {
@@ -3963,8 +3963,8 @@ describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objet
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: 'this' is not a Number object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: 'this' is not a Number object");
+	it("should return one of the english versions: MyDynamicTestString: 'this' is not a Number object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ \'this\'\ is\ not\ a\ Number\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objeto VBArray", function () {
@@ -3979,8 +3979,8 @@ describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objet
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: 'this' is not a VBArray object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: 'this' is not a VBArray object");
+	it("should return one of the english versions: MyDynamicTestString: 'this' is not a VBArray object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ \'this\'\ is\ not\ a\ VBArray\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objeto JavaScript", function () {
@@ -3995,8 +3995,8 @@ describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objet
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: 'this' is not a JavaScript object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: 'this' is not a JavaScript object");
+	it("should return one of the english versions: MyDynamicTestString: 'this' is not a JavaScript object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ \'this\'\ is\ not\ a\ JavaScript\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objeto Enumerador", function () {
@@ -4011,8 +4011,8 @@ describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objet
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: 'this' is not an Enumerator object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: 'this' is not an Enumerator object");
+	it("should return one of the english versions: MyDynamicTestString: 'this' is not an Enumerator object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ \'this\'\ is\ not\ an\ Enumerator\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objeto RegExp", function () {
@@ -4027,8 +4027,8 @@ describe("translating pt-PT string: MyDynamicTestString: 'this' não é um objet
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: 'this' is not a RegExp object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: 'this' is not a RegExp object");
+	it("should return one of the english versions: MyDynamicTestString: 'this' is not a RegExp object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ \'this\'\ is\ not\ a\ RegExp\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: argumento inválido", function () {
@@ -4043,8 +4043,8 @@ describe("translating pt-PT string: MyDynamicTestString: argumento inválido", f
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: invalid argument", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: invalid argument");
+	it("should return one of the english versions: MyDynamicTestString: invalid argument", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ invalid\ argument/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: o argumento não é um Objeto", function () {
@@ -4059,8 +4059,8 @@ describe("translating pt-PT string: MyDynamicTestString: o argumento não é um 
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: argument is not an Object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: argument is not an Object");
+	it("should return one of the english versions: MyDynamicTestString: argument is not an Object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ argument\ is\ not\ an\ Object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: o argumento não é um objeto JavaScript", function () {
@@ -4075,8 +4075,8 @@ describe("translating pt-PT string: MyDynamicTestString: o argumento não é um 
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: argument is not a JavaScript object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: argument is not a JavaScript object");
+	it("should return one of the english versions: MyDynamicTestString: argument is not a JavaScript object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ argument\ is\ not\ a\ JavaScript\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: o argumento não é um objeto de Função", function () {
@@ -4091,8 +4091,8 @@ describe("translating pt-PT string: MyDynamicTestString: o argumento não é um 
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: argument is not a Function object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: argument is not a Function object");
+	it("should return one of the english versions: MyDynamicTestString: argument is not a Function object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ argument\ is\ not\ a\ Function\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: o argumento não é um objeto VBArray", function () {
@@ -4107,8 +4107,8 @@ describe("translating pt-PT string: MyDynamicTestString: o argumento não é um 
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: argument is not a VBArray object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: argument is not a VBArray object");
+	it("should return one of the english versions: MyDynamicTestString: argument is not a VBArray object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ argument\ is\ not\ a\ VBArray\ object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: o argumento é nulo ou não definido", function () {
@@ -4123,8 +4123,8 @@ describe("translating pt-PT string: MyDynamicTestString: o argumento é nulo ou 
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: argument is null or undefined", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: argument is null or undefined");
+	it("should return one of the english versions: MyDynamicTestString: argument is null or undefined", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ argument\ is\ null\ or\ undefined/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: o argumento não é um Objeto e não é nulo", function () {
@@ -4139,8 +4139,8 @@ describe("translating pt-PT string: MyDynamicTestString: o argumento não é um 
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: argument is not an Object and is not null", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: argument is not an Object and is not null");
+	it("should return one of the english versions: MyDynamicTestString: argument is not an Object and is not null", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ argument\ is\ not\ an\ Object\ and\ is\ not\ null/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: o argumento não tem uma propriedade 'length' válida", function () {
@@ -4155,8 +4155,8 @@ describe("translating pt-PT string: MyDynamicTestString: o argumento não tem um
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: argument does not have a valid 'length' property", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: argument does not have a valid 'length' property");
+	it("should return one of the english versions: MyDynamicTestString: argument does not have a valid 'length' property", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ argument\ does\ not\ have\ a\ valid\ \'length\'\ property/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: Matriz ou objeto de argumentos esperados", function () {
@@ -4171,8 +4171,8 @@ describe("translating pt-PT string: MyDynamicTestString: Matriz ou objeto de arg
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: Array or arguments object expected", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: Array or arguments object expected");
+	it("should return one of the english versions: MyDynamicTestString: Array or arguments object expected", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ Array\ or\ arguments\ object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Operando inválido para 'MyDynamicTestString': Objeto esperado", function () {
@@ -4187,8 +4187,8 @@ describe("translating pt-PT string: Operando inválido para 'MyDynamicTestString
 		});
 	});
 
-	it("should return the english version: Invalid operand to 'MyDynamicTestString': Object expected", function () {
-		expect(translation, translation).to.equal("Invalid operand to 'MyDynamicTestString': Object expected");
+	it("should return one of the english versions: Invalid operand to 'MyDynamicTestString': Object expected", function () {
+		expect(translation, translation).to.match(/Invalid\ operand\ to\ \'MyDynamicTestString\'\:\ Object\ expected/g);
 	});
 });
 describe("translating pt-PT string: Operando inválido para 'MyDynamicTestString': Função esperada", function () {
@@ -4203,8 +4203,8 @@ describe("translating pt-PT string: Operando inválido para 'MyDynamicTestString
 		});
 	});
 
-	it("should return the english version: Invalid operand to 'MyDynamicTestString': Function expected", function () {
-		expect(translation, translation).to.equal("Invalid operand to 'MyDynamicTestString': Function expected");
+	it("should return one of the english versions: Invalid operand to 'MyDynamicTestString': Function expected", function () {
+		expect(translation, translation).to.match(/Invalid\ operand\ to\ \'MyDynamicTestString\'\:\ Function\ expected/g);
 	});
 });
 describe("translating pt-PT string: Descritor inválido para a propriedade 'MyDynamicTestString'", function () {
@@ -4219,8 +4219,8 @@ describe("translating pt-PT string: Descritor inválido para a propriedade 'MyDy
 		});
 	});
 
-	it("should return the english version: Invalid descriptor for property 'MyDynamicTestString'", function () {
-		expect(translation, translation).to.equal("Invalid descriptor for property 'MyDynamicTestString'");
+	it("should return one of the english versions: Invalid descriptor for property 'MyDynamicTestString'", function () {
+		expect(translation, translation).to.match(/Invalid\ descriptor\ for\ property\ \'MyDynamicTestString\'/g);
 	});
 });
 describe("translating pt-PT string: Não é possível definir a propriedade 'MyDynamicTestString': objeto não é extensível", function () {
@@ -4235,8 +4235,8 @@ describe("translating pt-PT string: Não é possível definir a propriedade 'MyD
 		});
 	});
 
-	it("should return the english version: Cannot define property 'MyDynamicTestString': object is not extensible", function () {
-		expect(translation, translation).to.equal("Cannot define property 'MyDynamicTestString': object is not extensible");
+	it("should return one of the english versions: Cannot define property 'MyDynamicTestString': object is not extensible", function () {
+		expect(translation, translation).to.match(/Cannot\ define\ property\ \'MyDynamicTestString\'\:\ object\ is\ not\ extensible/g);
 	});
 });
 describe("translating pt-PT string: Não é possível redefinir uma propriedade não configurável 'MyDynamicTestString'", function () {
@@ -4251,8 +4251,8 @@ describe("translating pt-PT string: Não é possível redefinir uma propriedade 
 		});
 	});
 
-	it("should return the english version: Cannot redefine non-configurable property 'MyDynamicTestString'", function () {
-		expect(translation, translation).to.equal("Cannot redefine non-configurable property 'MyDynamicTestString'");
+	it("should return one of the english versions: Cannot redefine non-configurable property 'MyDynamicTestString'", function () {
+		expect(translation, translation).to.match(/Cannot\ redefine\ non\-configurable\ property\ \'MyDynamicTestString\'/g);
 	});
 });
 describe("translating pt-PT string: Não é possível alterar uma propriedade não gravável 'MyDynamicTestString'", function () {
@@ -4267,8 +4267,8 @@ describe("translating pt-PT string: Não é possível alterar uma propriedade n�
 		});
 	});
 
-	it("should return the english version: Cannot modify non-writable property 'MyDynamicTestString'", function () {
-		expect(translation, translation).to.equal("Cannot modify non-writable property 'MyDynamicTestString'");
+	it("should return one of the english versions: Cannot modify non-writable property 'MyDynamicTestString'", function () {
+		expect(translation, translation).to.match(/Cannot\ modify\ non\-writable\ property\ \'MyDynamicTestString\'/g);
 	});
 });
 describe("translating pt-PT string: Não é possível alterar a propriedade 'MyDynamicTestString': 'length' não é gravável", function () {
@@ -4283,8 +4283,8 @@ describe("translating pt-PT string: Não é possível alterar a propriedade 'MyD
 		});
 	});
 
-	it("should return the english version: Cannot modify property 'MyDynamicTestString': 'length' is not writable", function () {
-		expect(translation, translation).to.equal("Cannot modify property 'MyDynamicTestString': 'length' is not writable");
+	it("should return one of the english versions: Cannot modify property 'MyDynamicTestString': 'length' is not writable", function () {
+		expect(translation, translation).to.match(/Cannot\ modify\ property\ \'MyDynamicTestString\'\:\ \'length\'\ is\ not\ writable/g);
 	});
 });
 describe("translating pt-PT string: Não é possível definir a propriedade 'MyDynamicTestString'", function () {
@@ -4299,8 +4299,8 @@ describe("translating pt-PT string: Não é possível definir a propriedade 'MyD
 		});
 	});
 
-	it("should return the english version: Cannot define property 'MyDynamicTestString'", function () {
-		expect(translation, translation).to.equal("Cannot define property 'MyDynamicTestString'");
+	it("should return one of the english versions: Cannot define property 'MyDynamicTestString'", function () {
+		expect(translation, translation).to.match(/Cannot\ define\ property\ \'MyDynamicTestString\'/g);
 	});
 });
 describe("translating pt-PT string: O argumento necessário MyDynamicTestString no método DataView não foi especificado", function () {
@@ -4315,8 +4315,8 @@ describe("translating pt-PT string: O argumento necessário MyDynamicTestString 
 		});
 	});
 
-	it("should return the english version: Required argument MyDynamicTestString in DataView method is not specified", function () {
-		expect(translation, translation).to.equal("Required argument MyDynamicTestString in DataView method is not specified");
+	it("should return one of the english versions: Required argument MyDynamicTestString in DataView method is not specified", function () {
+		expect(translation, translation).to.match(/Required\ argument\ MyDynamicTestString\ in\ DataView\ method\ is\ not\ specified/g);
 	});
 });
 describe("translating pt-PT string: O argumento do construtor DataView MyDynamicTestString é inválido", function () {
@@ -4331,8 +4331,8 @@ describe("translating pt-PT string: O argumento do construtor DataView MyDynamic
 		});
 	});
 
-	it("should return the english version: DataView constructor argument MyDynamicTestString is invalid", function () {
-		expect(translation, translation).to.equal("DataView constructor argument MyDynamicTestString is invalid");
+	it("should return one of the english versions: DataView constructor argument MyDynamicTestString is invalid", function () {
+		expect(translation, translation).to.match(/DataView\ constructor\ argument\ MyDynamicTestString\ is\ invalid/g);
 	});
 });
 describe("translating pt-PT string: A função 'MyDynamicTestString' tem uma assinatura inválida e não pode ser chamada", function () {
@@ -4347,8 +4347,8 @@ describe("translating pt-PT string: A função 'MyDynamicTestString' tem uma ass
 		});
 	});
 
-	it("should return the english version: The function 'MyDynamicTestString' has an invalid signature and cannot be called", function () {
-		expect(translation, translation).to.equal("The function 'MyDynamicTestString' has an invalid signature and cannot be called");
+	it("should return one of the english versions: The function 'MyDynamicTestString' has an invalid signature and cannot be called", function () {
+		expect(translation, translation).to.match(/The\ function\ \'MyDynamicTestString\'\ has\ an\ invalid\ signature\ and\ cannot\ be\ called/g);
 	});
 });
 describe("translating pt-PT string: A propriedade 'MyDynamicTestString' tem uma assinatura inválida e não pode ser acedida", function () {
@@ -4363,8 +4363,8 @@ describe("translating pt-PT string: A propriedade 'MyDynamicTestString' tem uma 
 		});
 	});
 
-	it("should return the english version: The property 'MyDynamicTestString' has an invalid signature and cannot be accessed", function () {
-		expect(translation, translation).to.equal("The property 'MyDynamicTestString' has an invalid signature and cannot be accessed");
+	it("should return one of the english versions: The property 'MyDynamicTestString' has an invalid signature and cannot be accessed", function () {
+		expect(translation, translation).to.match(/The\ property\ \'MyDynamicTestString\'\ has\ an\ invalid\ signature\ and\ cannot\ be\ accessed/g);
 	});
 });
 describe("translating pt-PT string: O runtimeclass MyDynamicTestString que tem Windows.Foundation.IPropertyValue como interface predefinida não é suportado como tipo de parâmetro de entrada", function () {
@@ -4379,8 +4379,8 @@ describe("translating pt-PT string: O runtimeclass MyDynamicTestString que tem W
 		});
 	});
 
-	it("should return the english version: The runtimeclass MyDynamicTestString that has Windows.Foundation.IPropertyValue as default interface is not supported as input parameter type", function () {
-		expect(translation, translation).to.equal("The runtimeclass MyDynamicTestString that has Windows.Foundation.IPropertyValue as default interface is not supported as input parameter type");
+	it("should return one of the english versions: The runtimeclass MyDynamicTestString that has Windows.Foundation.IPropertyValue as default interface is not supported as input parameter type", function () {
+		expect(translation, translation).to.match(/The\ runtimeclass\ MyDynamicTestString\ that\ has\ Windows\.Foundation\.IPropertyValue\ as\ default\ interface\ is\ not\ supported\ as\ input\ parameter\ type/g);
 	});
 });
 describe("translating pt-PT string: O objeto com a interface Windows.Foundation.IPropertyValue que tem o nome de runtimeclass MyDynamicTestString não é suportado como parâmetro de saída", function () {
@@ -4395,8 +4395,8 @@ describe("translating pt-PT string: O objeto com a interface Windows.Foundation.
 		});
 	});
 
-	it("should return the english version: The object with interface Windows.Foundation.IPropertyValue that has runtimeclass name MyDynamicTestString is not supported as out parameter", function () {
-		expect(translation, translation).to.equal("The object with interface Windows.Foundation.IPropertyValue that has runtimeclass name MyDynamicTestString is not supported as out parameter");
+	it("should return one of the english versions: The object with interface Windows.Foundation.IPropertyValue that has runtimeclass name MyDynamicTestString is not supported as out parameter", function () {
+		expect(translation, translation).to.match(/The\ object\ with\ interface\ Windows\.Foundation\.IPropertyValue\ that\ has\ runtimeclass\ name\ MyDynamicTestString\ is\ not\ supported\ as\ out\ parameter/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: 'this' não é um Objeto Passível de Inspeção", function () {
@@ -4411,8 +4411,8 @@ describe("translating pt-PT string: MyDynamicTestString: 'this' não é um Objet
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: 'this' is not an Inspectable Object", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: 'this' is not an Inspectable Object");
+	it("should return one of the english versions: MyDynamicTestString: 'this' is not an Inspectable Object", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ \'this\'\ is\ not\ an\ Inspectable\ Object/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: não foi possível converter o argumento no tipo 'char'", function () {
@@ -4427,8 +4427,8 @@ describe("translating pt-PT string: MyDynamicTestString: não foi possível conv
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: could not convert argument to type 'char'", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: could not convert argument to type 'char'");
+	it("should return one of the english versions: MyDynamicTestString: could not convert argument to type 'char'", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ could\ not\ convert\ argument\ to\ type\ \'char\'/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: não foi possível converter o argumento no tipo 'GUID'", function () {
@@ -4443,8 +4443,8 @@ describe("translating pt-PT string: MyDynamicTestString: não foi possível conv
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: could not convert argument to type 'GUID'", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: could not convert argument to type 'GUID'");
+	it("should return one of the english versions: MyDynamicTestString: could not convert argument to type 'GUID'", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ could\ not\ convert\ argument\ to\ type\ \'GUID\'/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: não foi possível converter o valor de retorno em IInspectable", function () {
@@ -4459,8 +4459,8 @@ describe("translating pt-PT string: MyDynamicTestString: não foi possível conv
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: could not convert return value to IInspectable", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: could not convert return value to IInspectable");
+	it("should return one of the english versions: MyDynamicTestString: could not convert return value to IInspectable", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ could\ not\ convert\ return\ value\ to\ IInspectable/g);
 	});
 });
 describe("translating pt-PT string: Não foi possível converter o objeto em estrutura: falta a propriedade esperada 'MyDynamicTestString' no objeto", function () {
@@ -4475,8 +4475,8 @@ describe("translating pt-PT string: Não foi possível converter o objeto em est
 		});
 	});
 
-	it("should return the english version: Could not convert object to struct: object missing expected property 'MyDynamicTestString'", function () {
-		expect(translation, translation).to.equal("Could not convert object to struct: object missing expected property 'MyDynamicTestString'");
+	it("should return one of the english versions: Could not convert object to struct: object missing expected property 'MyDynamicTestString'", function () {
+		expect(translation, translation).to.match(/Could\ not\ convert\ object\ to\ struct\:\ object\ missing\ expected\ property\ \'MyDynamicTestString\'/g);
 	});
 });
 describe("translating pt-PT string: O tipo 'MyDynamicTestString' não foi encontrado", function () {
@@ -4491,8 +4491,8 @@ describe("translating pt-PT string: O tipo 'MyDynamicTestString' não foi encont
 		});
 	});
 
-	it("should return the english version: Type 'MyDynamicTestString' not found", function () {
-		expect(translation, translation).to.equal("Type 'MyDynamicTestString' not found");
+	it("should return one of the english versions: Type 'MyDynamicTestString' not found", function () {
+		expect(translation, translation).to.match(/Type\ \'MyDynamicTestString\'\ not\ found/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: função chamada com argumentos insuficientes", function () {
@@ -4507,8 +4507,8 @@ describe("translating pt-PT string: MyDynamicTestString: função chamada com ar
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: function called with too few arguments", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: function called with too few arguments");
+	it("should return one of the english versions: MyDynamicTestString: function called with too few arguments", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ function\ called\ with\ too\ few\ arguments/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: o tipo não é estruturável", function () {
@@ -4523,8 +4523,8 @@ describe("translating pt-PT string: MyDynamicTestString: o tipo não é estrutur
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: type is not constructible", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: type is not constructible");
+	it("should return one of the english versions: MyDynamicTestString: type is not constructible", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ type\ is\ not\ constructible/g);
 	});
 });
 describe("translating pt-PT string: Não foi possível converter o valor em PropertyValue: MyDynamicTestString não é suportado por PropertyValue", function () {
@@ -4539,8 +4539,8 @@ describe("translating pt-PT string: Não foi possível converter o valor em Prop
 		});
 	});
 
-	it("should return the english version: Could not convert value to PropertyValue: MyDynamicTestString not supported by PropertyValue", function () {
-		expect(translation, translation).to.equal("Could not convert value to PropertyValue: MyDynamicTestString not supported by PropertyValue");
+	it("should return one of the english versions: Could not convert value to PropertyValue: MyDynamicTestString not supported by PropertyValue", function () {
+		expect(translation, translation).to.match(/Could\ not\ convert\ value\ to\ PropertyValue\:\ MyDynamicTestString\ not\ supported\ by\ PropertyValue/g);
 	});
 });
 describe("translating pt-PT string: Não foi possível converter o valor em IInspectable: MyDynamicTestString não é suportado por IInspectable", function () {
@@ -4555,8 +4555,8 @@ describe("translating pt-PT string: Não foi possível converter o valor em IIns
 		});
 	});
 
-	it("should return the english version: Could not convert value to IInspectable: MyDynamicTestString not supported by IInspectable", function () {
-		expect(translation, translation).to.equal("Could not convert value to IInspectable: MyDynamicTestString not supported by IInspectable");
+	it("should return one of the english versions: Could not convert value to IInspectable: MyDynamicTestString not supported by IInspectable", function () {
+		expect(translation, translation).to.match(/Could\ not\ convert\ value\ to\ IInspectable\:\ MyDynamicTestString\ not\ supported\ by\ IInspectable/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: o objeto passível de inspeção 'this' foi libertado e não pode ser acedido", function () {
@@ -4571,8 +4571,8 @@ describe("translating pt-PT string: MyDynamicTestString: o objeto passível de i
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: The Inspectable object 'this' is released and cannot be accessed", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: The Inspectable object 'this' is released and cannot be accessed");
+	it("should return one of the english versions: MyDynamicTestString: The Inspectable object 'this' is released and cannot be accessed", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ The\ Inspectable\ object\ \'this\'\ is\ released\ and\ cannot\ be\ accessed/g);
 	});
 });
 describe("translating pt-PT string: 'this' não tem o tipo esperado: MyDynamicTestString", function () {
@@ -4587,8 +4587,8 @@ describe("translating pt-PT string: 'this' não tem o tipo esperado: MyDynamicTe
 		});
 	});
 
-	it("should return the english version: 'this' is not of expected type: MyDynamicTestString", function () {
-		expect(translation, translation).to.equal("'this' is not of expected type: MyDynamicTestString");
+	it("should return one of the english versions: 'this' is not of expected type: MyDynamicTestString", function () {
+		expect(translation, translation).to.match(/\'this\'\ is\ not\ of\ expected\ type\:\ MyDynamicTestString/g);
 	});
 });
 describe("translating pt-PT string: MyDynamicTestString: ocorreu uma falha inesperada ao tentar obter informações de metadados", function () {
@@ -4603,8 +4603,8 @@ describe("translating pt-PT string: MyDynamicTestString: ocorreu uma falha inesp
 		});
 	});
 
-	it("should return the english version: MyDynamicTestString: an unexpected failure occurred while trying to obtain metadata information", function () {
-		expect(translation, translation).to.equal("MyDynamicTestString: an unexpected failure occurred while trying to obtain metadata information");
+	it("should return one of the english versions: MyDynamicTestString: an unexpected failure occurred while trying to obtain metadata information", function () {
+		expect(translation, translation).to.match(/MyDynamicTestString\:\ an\ unexpected\ failure\ occurred\ while\ trying\ to\ obtain\ metadata\ information/g);
 	});
 });
 describe("translating pt-PT string: A data especificada não está disponível no calendário da localização atual", function () {
@@ -4619,7 +4619,7 @@ describe("translating pt-PT string: A data especificada não está disponível n
 		});
 	});
 
-	it("should return the english version: The specified date is not available in the current locale's calendar", function () {
-		expect(translation, translation).to.equal("The specified date is not available in the current locale's calendar");
+	it("should return one of the english versions: The specified date is not available in the current locale's calendar", function () {
+		expect(translation, translation).to.match(/The\ specified\ date\ is\ not\ available\ in\ the\ current\ locale\'s\ calendar/g);
 	});
 });
