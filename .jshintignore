@@ -1,4 +1,4 @@
 ./bin/templates/test-template.js
 ./test/generatedTests/**
-test\generatedTests\ar-SA.spec.js
-test\generatedTests\he-IL.spec.js
+test/generatedTests/ar-SA.spec.js
+test/generatedTests/he-IL.spec.js

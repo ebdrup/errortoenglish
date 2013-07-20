@@ -5,14 +5,16 @@ var path = require("path");
 runJsHint(["lib", "test", "bin"], function (err) {
 	if (err) {
 		console.error("Exiting because of jsHint errors");
-		return setTimeout(function(){process.exit(1);}, 1000);
+		return setTimeout(function () {
+			process.exit(1);
+		}, 1000);
 	}
 	return runMocha();
 });
 
 function runMocha() {
 	var realProcessExit = process.exit;
-	process.exit = function(code){
+	process.exit = function (code) {
 		setTimeout(realProcessExit.bind(process, code), 2000);
 	};
 	require('../node_modules/mocha/bin/_mocha');
@@ -26,9 +28,9 @@ function runJsHint(pathsArray, callback) {
 		.filter(function (line) {
 			return !!line.trim(); //remove empty lines
 		})
-		.map(function(file){
-            return path.resolve(file);
-        });
+		.map(function (file) {
+			return path.resolve(file);
+		});
 	var results = jsHint.hint(pathsArray, config, reporter, ignores);
 	if (results.length > 0) {
 		return callback(new Error("JSHintErrors"));
