@@ -1,4 +1,14 @@
 {
+    "predef": [
+        "sinon",
+        "it",
+        "describe",
+        "expect",
+        "beforeEach",
+        "before",
+        "after",
+        "afterEach"
+    ],
 	"asi" : false,
 	"bitwise" : true,
 	"boss" : false,

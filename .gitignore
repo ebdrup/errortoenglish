@@ -1,5 +1,5 @@
 node_modules
-
+npm-debug.log
 *.seed
 *.log
 *.dat
@@ -11,14 +11,3 @@ node_modules
 *.sublime-project
 *.sublime-workspace
 *.orig
-
-pids
-logs
-results
-
-npm-debug.log
-
-.coverage
-coverageReport.html
-
-

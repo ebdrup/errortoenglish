@@ -1,3 +1,4 @@
+node_modules
 ./bin/templates/test-template.js
 ./test/generatedTests/**
 test/generatedTests/ar-SA.spec.js
