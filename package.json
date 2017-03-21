@@ -31,7 +31,7 @@
 		"mocha": "",
 		"chai": "",
 		"sinon": "",
-		"sinon-chai": "",
+		"sinon-chai": "2.9.0",
 		"quotemeta": "",
 		"mocha-jshint": ""
 	},
