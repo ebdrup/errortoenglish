@@ -28,7 +28,7 @@
 		"url": "https://github.com/Muscula/errortoenglish/issues"
 	},
 	"devDependencies": {
-		"mocha": "",
+		"mocha": "3.4.1",
 		"chai": "",
 		"sinon": "",
 		"sinon-chai": "",
