@@ -30,7 +30,7 @@
 	"devDependencies": {
 		"mocha": "",
 		"chai": "",
-		"sinon": "",
+		"sinon": "2.3.1",
 		"sinon-chai": "",
 		"quotemeta": "",
 		"mocha-jshint": ""
