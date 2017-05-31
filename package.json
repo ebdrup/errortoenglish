@@ -29,7 +29,7 @@
 	},
 	"devDependencies": {
 		"mocha": "",
-		"chai": "",
+		"chai": "4.0.1",
 		"sinon": "",
 		"sinon-chai": "",
 		"quotemeta": "",
